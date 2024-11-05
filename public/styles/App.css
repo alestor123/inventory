@@ -142,3 +142,6 @@ figure {
   .list a:hover {
     color: rgb(59, 252, 38);
   }
+  .remove {
+    display: none;
+}
