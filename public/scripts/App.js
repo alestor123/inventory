@@ -1,3 +1,6 @@
+const searchInput = document.querySelector("searchBarInput")
+const list = document.querySelector('.list');
+
 const main = async () => {
     const {username} = (await (await fetch("./config/user.json")).json());
     const data = (await (await fetch(`https://api.github.com/users/${username}`)).json());
@@ -26,3 +29,24 @@ document.querySelector('.info').innerHTML = `
 }
 
 
+async function displayDirs(dirs) {
+        const {items} = (await (await fetch("./config/user.json")).json());
+
+items.forEach(dir => {
+         let liItem = document.createElement('li');
+         liItem.classList.add('itm');
+         liItem.innerHTML = `
+            <a href=${dir.url} target='_blank'>
+                <div>
+                    <h3>
+                    <span class='${dir.icon}' ></span>
+                        ${dir.name}
+                    </h3>
+                    <p>${dir.description}</p>
+                </div>
+            </a>`;
+            list.append(liItem);
+  
+});    // }
+}
+displayDirs()
