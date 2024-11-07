@@ -2,54 +2,64 @@
     "username":"alestor123",
     "items":[
         {
-            "name": "TALKS",
+            "name": "SOFTWARE PROJECTS",
             "description": "My favourite place :)",
+            "mainDescription": "My favourite place :)",
+            "type":"projects",
             "url": "https://github.com/alestor123",
+            "icon": "fa-solid fa-comment"
+        },
+        {
+            "name": "HARDWARE PROJECTS",
+            "description": "My favourite place :)",
+            "type":"projects",
+            "mainDescription": "My favourite place :)",
+            "url": "https://github.com/alestor123",
+            "icon": "fa-solid fa-comment"
+        },
+        {
+            "name": "RESUME",
+            "description": "My favourite place :)",
+            "type":"link",
+            "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
+            "icon": "fa-solid fa-comment"
+        },
+        {
+            "name": "CERTIFICATES",
+            "description": "My favourite place :)",
+            "type":"certificate",
+            "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
+            "icon": "fa-solid fa-comment"
+        },
+        {
+            "name": "WORKSHOPS",
+            "description": "My favourite place :)",
+            "type":"events",
+            "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
         {
             "name": "TALKS",
             "description": "My favourite place :)",
+            "type":"events",
             "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "TALKS",
+            "name": "SOCIALS",
             "description": "My favourite place :)",
+            "type":"socials",
             "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "name": "TALKS",
-            "description": "My favourite place :)",
-            "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "name": "TALKS",
-            "description": "My favourite place :)",
-            "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "name": "TALKS",
-            "description": "My favourite place :)",
-            "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "name": "HACKTHON",
-            "description": "My favourite place :)",
-            "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "name": "TALKS",
-            "description": "My favourite place :)",
-            "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         }
-    
+        
+    ],
+    "contents":[
         
     ]
 }

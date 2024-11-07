@@ -13,6 +13,8 @@ body {
     width: 90%;
     max-width: 1280px;
     text-align: center; /* Center text horizontally */
+    padding-bottom: 50px; /* adjust to footer height */
+
    
 }
 .container h1 {
@@ -33,6 +35,8 @@ small {
     bottom: 0; /* Bottom alignment */
     width: 100%; /* Full width */
     font-size: 14px; /* Smaller font */
+    
+    
   }
   
   .footer a {
@@ -56,7 +60,6 @@ small {
 
 .searchBar {
     padding-top: 3%;
-    padding-left: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -117,10 +120,11 @@ figure {
     display: flex;
     padding-top: 20px;
     margin-bottom: 20px;
-    background-color: rgb(56, 27, 27);
+    background-color: rgb(66, 6, 2);
     justify-content: center;
     padding: 2em;
     flex-wrap: wrap;
+    border-radius: 20px;
   }
   .list {
     align-items: flex-start;
@@ -134,7 +138,6 @@ figure {
   .list li {
     border-radius: 10px;
     margin: 5%;
-    border: 1px solid var(--accent);
     padding: 1em;
     text-align: center;
     background-color: #f5f5f5;
@@ -144,4 +147,9 @@ figure {
   }
   .remove {
     display: none;
+}
+.itm:hover {
+  box-shadow:
+        0 3px 6px rgb(59, 252, 38),
+        0 3px 6px rgb(59, 252, 38); 
 }
