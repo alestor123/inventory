@@ -1,0 +1,49 @@
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+h1 {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+}
+
+p {
+    color: #fff;
+    font-size: 2em;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+}
+
+/* Gradient Background Effect */
+.container {
+    background: linear-gradient(45deg, #ff69b4, #ff99cc);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
