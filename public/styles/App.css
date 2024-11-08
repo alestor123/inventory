@@ -76,7 +76,6 @@ figure {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    overflow: hidden;
     margin-right: 20px;
   }
   
@@ -87,7 +86,6 @@ figure {
   }
   
   div {
-    overflow: hidden;
     padding-top: 10px;
   }
   
@@ -124,6 +122,8 @@ figure {
     padding: 2em;
     flex-wrap: wrap;
     border-radius: 20px;
+        box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+
   }
   .list {
     align-items: flex-start;
