@@ -13,12 +13,14 @@ const {title,description} = items.find(isFound)
 const fileteredList = contents.filter(contentType => contentType.type === type)
 if(fileteredList.length===0) window.location.replace("/empty.html");
 maintitle.innerHTML = title
+document.title = title
 maindesc.innerHTML = description
 
 }
 
 // async function fetchData() {
     
+displayDirs("contents")
 
 // }
 run()

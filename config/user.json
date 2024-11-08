@@ -6,7 +6,6 @@
             "description": "My favourite place :)",
             "mainDescription": "My favourite place :)",
             "type":"softprojects",
-            "url": "https://github.com/alestor123",
             "icon": "fa-solid fa-comment"
         },
         {
@@ -14,22 +13,12 @@
             "description": "My favourite place :)",
             "type":"hardprojects",
             "mainDescription": "My favourite place :)",
-            "url": "https://github.com/alestor123",
             "icon": "fa-solid fa-comment"
         },
         {
             "title": "RESUME",
             "description": "My favourite place :)",
             "type":"link",
-            "url": "https://github.com/alestor123",
-            "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
-        },
-        {
-            "title": "CERTIFICATES",
-            "description": "My favourite place :)",
-            "type":"certificate",
-            "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
@@ -37,7 +26,6 @@
             "title": "WORKSHOPS",
             "description": "My favourite place :)",
             "type":"workshops",
-            "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
@@ -45,7 +33,6 @@
             "title": "TALKS",
             "description": "My favourite place :)",
             "type":"talks",
-            "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
@@ -53,7 +40,6 @@
             "title": "SOCIALS",
             "description": "My favourite place :)",
             "type":"socials",
-            "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         }
@@ -62,11 +48,62 @@
     "contents":[
         {
             "title": "Github",
-            "description": "My favourite place :)",
+            "description": "Home for my projects :)",
             "type":"socials",
             "url": "https://github.com/alestor123",
-            "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },
+        {
+            "title": "Twitter",
+            "description": "Mostly tech talks and memes",
+            "type":"socials",
+            "url": "https://twitter.com/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },{
+            "title": "LinkedIn",
+            "description": "Career related stuff",
+            "type":"socials",
+            "url": "https://www.linkedin.com/in/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },{
+            "title": "BLOG",
+            "description": "Sharing my knowledge",
+            "type":"socials",
+            "url": "https://alestor123.is-a.dev/blog/",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },{
+            "title": "Projects",
+            "description": "My favourite place :)",
+            "type":"socials",
+            "url": "http://localhost:5500/showcase.html?type=softprojects",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },{
+            "title": "DEV.TO",
+            "description": "My favourite place :)",
+            "type":"socials",
+            "url": "https://dev.to/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },
+        {
+            "title": "LEETCODE",
+            "description": "My favourite place :)",
+            "type":"socials",
+            "url": "https://leetcode.com/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        },{
+            "title": "CODEWARS",
+            "description": "My favourite place :)",
+            "type":"socials",
+            "url": "https://www.codewars.com/users/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
         }
     ]
-}
+}   
