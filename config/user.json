@@ -61,7 +61,12 @@
     ],
     "contents":[
         {
-            
+            "title": "Github",
+            "description": "My favourite place :)",
+            "type":"socials",
+            "url": "https://github.com/alestor123",
+            "mainDescription": "My favourite place :)",
+            "icon": "fa-solid fa-comment"
         }
     ]
 }
