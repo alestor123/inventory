@@ -32,15 +32,15 @@ const list = document.querySelector('.list');
 async function displayDirs(dirs) {
 const {items} = (await (await fetch("./config/user.json")).json());
 searchInput.classList.remove('hide');
-items.forEach(dir => {
+items.forEach((dir,index) => {
          let liItem = document.createElement('li');
          liItem.classList.add('itm');
          liItem.innerHTML = `
-            <a href=${dir.url} target='_blank'>
+            <a href= "${dir.type=="link" ? dir.url : ("/showcase.html?type="+dir.type)} " target='_blank'>
                 <div>
                     <h3>
                     <span class='${dir.icon}' ></span>
-                        ${dir.name}
+                        ${dir.title}
                     </h3>
                     <p>${dir.description}</p>
                 </div>

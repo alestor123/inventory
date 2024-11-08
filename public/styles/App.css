@@ -1,13 +1,11 @@
 body {
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
 }
 .container {
-    font-family: monospace;
-    color: rgb(59, 252, 38);
+    color: rgb(137, 247, 52);
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -19,6 +17,7 @@ body {
 }
 .container h1 {
     padding-top: 10px;
+    text-shadow: 0 0 10px rgb(137, 247, 52), 0 0 20px rgb(137, 247, 52), 0 0 30px rgb(137, 247, 52);
     padding-left: 70px;
 }
 
@@ -152,4 +151,8 @@ figure {
   box-shadow:
         0 3px 6px rgb(59, 252, 38),
         0 3px 6px rgb(59, 252, 38); 
+}
+
+.intro {
+color: black;
 }

@@ -2,23 +2,23 @@
     "username":"alestor123",
     "items":[
         {
-            "name": "SOFTWARE PROJECTS",
+            "title": "SOFTWARE PROJECTS",
             "description": "My favourite place :)",
             "mainDescription": "My favourite place :)",
-            "type":"projects",
+            "type":"softprojects",
             "url": "https://github.com/alestor123",
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "HARDWARE PROJECTS",
+            "title": "HARDWARE PROJECTS",
             "description": "My favourite place :)",
-            "type":"projects",
+            "type":"hardprojects",
             "mainDescription": "My favourite place :)",
             "url": "https://github.com/alestor123",
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "RESUME",
+            "title": "RESUME",
             "description": "My favourite place :)",
             "type":"link",
             "url": "https://github.com/alestor123",
@@ -26,7 +26,7 @@
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "CERTIFICATES",
+            "title": "CERTIFICATES",
             "description": "My favourite place :)",
             "type":"certificate",
             "url": "https://github.com/alestor123",
@@ -34,23 +34,23 @@
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "WORKSHOPS",
+            "title": "WORKSHOPS",
             "description": "My favourite place :)",
-            "type":"events",
+            "type":"workshops",
             "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "TALKS",
+            "title": "TALKS",
             "description": "My favourite place :)",
-            "type":"events",
+            "type":"talks",
             "url": "https://github.com/alestor123",
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-comment"
         },
         {
-            "name": "SOCIALS",
+            "title": "SOCIALS",
             "description": "My favourite place :)",
             "type":"socials",
             "url": "https://github.com/alestor123",
@@ -60,6 +60,8 @@
         
     ],
     "contents":[
-        
+        {
+            
+        }
     ]
 }
