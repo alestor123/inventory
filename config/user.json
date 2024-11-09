@@ -4,44 +4,54 @@
         {
             "title": "SOFTWARE PROJECTS",
             "description": "My favourite place :)",
-            "mainDescription": "My favourite place :)",
             "type":"softprojects",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-computer"
         },
         {
             "title": "HARDWARE PROJECTS",
-            "description": "My favourite place :)",
+            "description": "Circuitry & innovation",
             "type":"hardprojects",
             "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-microchip"
         },
         {
             "title": "RESUME",
-            "description": "My favourite place :)",
+            "description": "Skills & experience",
             "type":"link",
-            "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-file"
         },
         {
             "title": "WORKSHOPS",
-            "description": "My favourite place :)",
+            "description": "Knowledge sharing",
             "type":"workshops",
-            "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-chalkboard"
         },
         {
             "title": "TALKS",
-            "description": "My favourite place :)",
+            "description": "Spreading ideas",
+            "type":"talks",
+            "icon": "fa-solid fa-microphone"
+        },
+        {
+            "title": "CERTIFICATES",
+            "description": "Proof of expertise",
             "type":"talks",
             "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-trophy"
+        },
+        {
+            "title": "TIMELINE",
+            "description": "Journey of growth",
+            "type":"talks",
+            "mainDescription": "My favourite place :)",
+            "icon": "fa-solid fa-history"
         },
         {
             "title": "SOCIALS",
-            "description": "My favourite place :)",
+            "description": "You can find me over there",
             "type":"socials",
             "mainDescription": "My favourite place :)",
-            "icon": "fa-solid fa-comment"
+            "icon": "fa-solid fa-share"
         }
         
     ],
