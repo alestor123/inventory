@@ -62,6 +62,7 @@ small {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   .info {
     display: flex;
@@ -147,6 +148,9 @@ figure {
   .remove {
     display: none;
 }
+.itm {
+  color: black;
+}
 .itm:hover {
   box-shadow:
         0 3px 6px rgb(59, 252, 38),
@@ -156,3 +160,50 @@ figure {
 .intro {
 color: black;
 }
+
+
+  
+  /* Tags container */
+  .tags-container {
+    margin-bottom: 10px;
+    text-align: left; /* Align tags to left */
+  }
+  
+  .tags-title {
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block; /* Display title and tags on same line */
+  }
+  
+  #tags-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Display tags horizontally */
+  }
+  
+  #tags-list li {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0; /* Tag background color */
+    border-radius: 5px; /* Curved corners */
+    display: inline-block; /* Display tags horizontally */
+  }
+  
+  /* Description container */
+  .description-container {
+    text-align: left; /* Align description to left */
+  }
+  
+  .description-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #project-description {
+    margin-bottom: 20px;
+  }
+  
+  #popupWindow {
+    color: black;
+  }

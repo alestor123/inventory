@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="./public/styles/main.css">
     <link rel="stylesheet" href="./public/styles/App.css">
+    <link rel="stylesheet" href="./public/styles/showcase.css">
     
     <title>SHOWCASE</title>
 </head>
@@ -14,9 +15,11 @@
         <h1 id="main-title"> < HIDDEN INVENTORY /></HIDDEN></h1>
         <small id="main-description" >🤖 Some useful, some quirky, all made with ❤️ and code ✨.</small>
         <div class="root">
+      <div id="popupWindow"></div>
             <div class="intro-cover">
             </div>
             <section class="links">
+                <div class="selectionButton">
                 <div class="searchBar">
                     <input
                     type="text"
@@ -24,6 +27,10 @@
       placeholder="Search Inventory..."
     />
 </div>     
+<div class="selection">
+    <button class="btn active all" onclick="filterSelection('all')"> ALL</button>
+</div>
+</div>
 <ul class="list">
 
 </ul>
@@ -38,8 +45,7 @@
     </h3>
 </footer>
 </body>
+<script src="./public/scripts/popup.js"></script>
 <script src="./public/scripts/generator.js"></script>
 <script src="./public/scripts/Route.js"></script>
-
-
 </html>

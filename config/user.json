@@ -14,6 +14,7 @@
             "mainDescription": "My favourite place :)",
             "icon": "fa-solid fa-microchip"
         },
+
         {
             "title": "RESUME",
             "description": "Skills & experience",
@@ -78,13 +79,22 @@
             "url": "https://www.linkedin.com/in/alestor123",
             "icon": "fa-solid fa-comment",
             "tags":["developer"]
-        },{
+        }
+        ,{
+            "title": "YOUTUBE",
+            "description": "Where ",
+            "type":"socials",
+            "url": "https://www.linkedin.com/in/alestor123",
+            "icon": "fa-solid fa-comment",
+            "tags":["entertainment","developer"]
+        },
+        {
             "title": "BLOG",
             "description": "Sharing my knowledge",
             "type":"socials",
             "url": "https://alestor123.is-a.dev/blog/",
             "icon": "fa-solid fa-comment",
-            "tags":["developer"]
+            "tags":["personal","developer","entertainment"]
         },{
             "title": "Projects",
             "description": "My favourite place :)",
@@ -102,18 +112,52 @@
         },
         {
             "title": "LEETCODE",
-            "description": "My favourite place :)",
+            "description": "PURE PAIN",
             "type":"socials",
             "url": "https://leetcode.com/alestor123",
             "icon": "fa-solid fa-comment",
             "tags":["developer"]
         },{
             "title": "CODEWARS",
-            "description": "My favourite place :)",
+            "description": "challenging my coding skills",
             "type":"socials",
             "url": "https://www.codewars.com/users/alestor123",
             "icon": "fa-solid fa-comment",
             "tags":["developer"]
+        }
+        ,{
+            "title": "HARDWARE PROJECTS TEST",
+            "description": "challenging my coding skills",
+            "type":"hardprojects",
+            "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
+            "icon": "fa-solid fa-comment",
+            "tags":["developer"]
+        }
+        ,{
+            "title": "HARDWARE PROJECTS TEST 2",
+            "description": "challenging my coding skills",
+            "type":"hardprojects",
+            "icon": "fa-solid fa-comment",
+            "tags":["RPI"]
+        }
+        ,{
+            "title": "HARDWARE PROJECTS TEST 3",
+            "description": "challenging my coding skills",
+            "type":"hardprojects",
+            "icon": "fa-solid fa-comment",
+            "tags":["electrical"]
+        },{
+            "title": "HARDWARE PROJECTS TEST 4",
+            "description": "challenging my coding skills",
+            "type":"hardprojects",
+            "icon": "fa-solid fa-comment",
+            "tags":["embeddedsystem"]
+        },{
+            "title": "HARDWARE PROJECTS TEST 5",
+            "description": "challenging my coding skills",
+            "type":"hardprojects",
+            "icon": "fa-solid fa-comment",
+            "tags":["IOT"]
         }
     ]
 }   

@@ -3,6 +3,6 @@
 
 
 
-displayDirs("items")
+displayDirs("items","main")
 
 // SEARCH FEAT 
