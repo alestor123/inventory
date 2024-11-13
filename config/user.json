@@ -1,5 +1,6 @@
 {
     "username":"alestor123",
+    "platformFetch":["ossprojects"],
     "items":[
         {
             "title": "SOFTWARE PROJECTS",
@@ -20,6 +21,11 @@
             "description": "Skills & experience",
             "type":"link",
             "icon": "fa-solid fa-file"
+        },{
+            "title": "OSS PROJECTS",
+            "description": "Skills & experience",
+            "type":"ossprojects",
+            "icon": "fa-solid fa-code"
         },
         {
             "title": "WORKSHOPS",
