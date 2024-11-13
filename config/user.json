@@ -161,6 +161,43 @@
             "type":"hardprojects",
             "icon": "fa-solid fa-comment",
             "tags":["IOT"]
+        },{
+            "title": "SOFTWARE PROJECT 1",
+            "description": "challenging my coding skills",
+            "type":"softprojects",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
+            "icon": "fa-solid fa-comment",
+            "tags":["reactjs"]
+        },{
+            "title": "SOFTWARE PROJECT 2",
+            "description": "challenging my coding skills",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
+            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
+            "article":"https://dev.to/alestor123",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
+            "icon": "fa-solid fa-comment",
+            "tags":["reactjs"]
+        },{
+            "title": "SOFTWARE PROJECT 3",
+            "description": "challenging my coding skills",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
+            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
+            "article":"https://dev.to/alestor123",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
+            "icon": "fa-solid fa-comment",
+            "tags":["nodejs"]
+        },{
+            "title": "SOFTWARE PROJECT 4",
+            "description": "challenging my coding skills",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
+            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
+            "article":"https://dev.to/alestor123",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
+            "icon": "fa-solid fa-comment",
+            "tags":["expressjs"]
         }
     ]
 }   

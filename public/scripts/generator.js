@@ -126,18 +126,7 @@ else if(type === "content"){
                         </div>
                     </a>`;break;
                     // <a href= "${dir.url ? dir.url : ("/showcase.html?type="+dir.type)} " target='_blank'>
-                    case "softprojects":  
-                    return `
-                                <a href= "${dir.url ? dir.url : ("/showcase.html?type="+dir.type)} " target='_blank'>
-                                    <div>
-                                        <h3>
-                                        <span class='${dir.icon}' ></span>
-                                            ${dir.title}
-                                        </h3>
-                                        <p>${dir.description}</p>
-                                           ${ dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ""} 
-                                    </div>
-                                </a>`;break;
+                                case "softprojects":  
                                 case "hardprojects":  
                                 return `
                                             

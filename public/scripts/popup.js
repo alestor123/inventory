@@ -72,9 +72,10 @@ ${!data.demoVideo && !data.demoImage? `<h2>Kitty says: Media not found</h2> <img
       <!-- Video info -->
       <div class="video-info">
         <div class="video-actions">
-        ${data.sourceCode ? `<a href="${data.sourceCode} class="code-btn">SOURCE CODE</a> `:""  }  
-        ${data.article ? `<a href="${data.article} class="code-btn">READ MORE...</a> `:""  }  
-        ${data.liveDemo ? `<a href="${data.liveDemo} class="code-btn">LIVE DEMO</a> `:""  }  
+    
+        ${data.sourceCode ? ` <a href="${data.sourceCode}"  class="linkbutton" target='_blank'"> <i class="fa-brands fa-github-alt"> </i> SOURCE CODE </a>`:""  }  
+        ${data.article ? `<a href="${data.article}" class="linkbutton" target='_blank'><i class="fa-solid fa-newspaper"></i>READ MORE...</a>`:""  }  
+        ${data.liveDemo ? `<a href="${data.liveDemo}" class="linkbutton" target='_blank'><i class="fa-brands fa-chrome"></i> LIVE DEMO</a>`:""  }  
         </div>
         
         <!-- Tags -->
