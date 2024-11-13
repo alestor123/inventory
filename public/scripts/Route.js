@@ -3,31 +3,31 @@ const type = searchParams.get('type')
 const maintitle = document.getElementById('main-title')
 const maindesc = document.getElementById('main-description')
 
-async function run() {
-const {items,contents} = (await (await fetch("./config/user.json")).json());
-// code 404
-const isFound = keytype => (keytype.type === type)
-if(!items.some(isFound)) window.location.replace("/404.html");
-const {title,description} = items.find(isFound)
-const fileteredList = contents.filter(contentType => contentType.type === type)
-if(fileteredList.length===0) window.location.replace("/empty.html");
-maintitle.innerHTML = title
-document.title = title
-maindesc.innerHTML = description
-displayDirs("contents",fileteredList)
-const tags = await generateTags(fileteredList)
-displayTags(tags)
+async function run () {
+  const { items, contents } = (await (await fetch('./config/user.json')).json())
+  // code 404
+  const isFound = keytype => (keytype.type === type)
+  if (!items.some(isFound)) window.location.replace('/404.html')
+  const { title, description } = items.find(isFound)
+  const fileteredList = contents.filter(contentType => contentType.type === type)
+  if (fileteredList.length === 0) window.location.replace('/empty.html')
+  maintitle.innerHTML = title
+  document.title = title
+  maindesc.innerHTML = description
+  displayDirs('contents', fileteredList)
+  const tags = await generateTags(fileteredList)
+  displayTags(tags)
 // runPopup()
 }
 
 // async function fetchData() {
-    
+
 run()
 
 // }
 
-function runAfterLoad() {
-    // code after load
+function runAfterLoad () {
+  // code after load
 }
 /*
 
@@ -37,15 +37,15 @@ function runAfterLoad() {
   <div class="popup-content">
     <!-- Close button -->
     <span class="close">&times;</span>
-    
+
     <!-- Project details -->
     <div class="project-details">
       <h2 id="project-title" class="text-center">Project Title</h2>
-      
+
       <!-- Video container -->
       <div class="video-container">
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/1027937493?h=93661452e5"  frameborder="0"  id="project-video"  allowfullscreen></iframe>      </div>
-      
+
       <!-- Video info -->
       <div class="video-info">
         <div class="video-actions">
@@ -53,7 +53,7 @@ function runAfterLoad() {
           <a class="code-btn">CODE</a>
           <a class="live-demo-btn">LIVE DEMO</a>
         </div>
-        
+
         <!-- Tags -->
         <div class="tags-container">
             <span class="tags-title">TAGS:</span>
@@ -61,7 +61,7 @@ function runAfterLoad() {
               <!-- Tags will be listed here -->
             </ul>
           </div>
-          
+
           <!-- Description -->
           <div class="description-container">
             <h3 class="description-heading">Description</h3>

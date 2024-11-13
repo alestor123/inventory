@@ -1,8 +1,5 @@
-
 // main();
 
+displayDirs('items', 'main')
 
-
-displayDirs("items","main")
-
-// SEARCH FEAT 
+// SEARCH FEAT
