@@ -136,6 +136,7 @@
         ,{
             "title": "HARDWARE PROJECTS TEST 2",
             "description": "challenging my coding skills",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786"],
             "type":"hardprojects",
             "icon": "fa-solid fa-comment",
             "tags":["RPI"]
@@ -144,12 +145,14 @@
             "title": "HARDWARE PROJECTS TEST 3",
             "description": "challenging my coding skills",
             "type":"hardprojects",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
             "icon": "fa-solid fa-comment",
             "tags":["electrical"]
         },{
             "title": "HARDWARE PROJECTS TEST 4",
             "description": "challenging my coding skills",
             "type":"hardprojects",
+            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
             "icon": "fa-solid fa-comment",
             "tags":["embeddedsystem"]
         },{
