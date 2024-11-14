@@ -1,9 +1,13 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative; /* Add this */
+  min-height: 100vh; /* Add this */
 }
+
+
 .container {
     color: rgb(137, 247, 52);
     justify-content: center;
@@ -25,19 +29,16 @@ small {
     font-size: 14px;
   font-weight: 700; /* Even bolder */
 }
-
 .footer {
-    color: #fff; /* White text */
-    padding: 20px; /* Add space */
-    text-align: center; /* Center text */
-    position: fixed; /* Stick to bottom */
-    bottom: 0; /* Bottom alignment */
-    width: 100%; /* Full width */
-    font-size: 14px; /* Smaller font */
-    
-    
-  }
-  
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute; /* Change from fixed to absolute */
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+ 
   .footer a {
     color: #ccc; /* Lighter text for links */
   }

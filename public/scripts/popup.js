@@ -19,7 +19,7 @@ function popup (index) {
       <!-- Video container -->
       <div class="video-container">
 ${data.demoVideo ? `<iframe title="vimeo-player" src="${data.demoVideo}"  frameborder="0"  id="project-video"  allowfullscreen></iframe>` : ''} 
-${data.demoImage && data.demoImage.constructor == Array && data.demoImage.length >= 1
+${data.demoImage && data.demoImage.constructor === Array && data.demoImage.length >= 1
 ? `
   
 ${data.demoImage.length === 1

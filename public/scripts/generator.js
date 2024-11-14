@@ -1,8 +1,8 @@
 const searchInput = document.querySelector('.searchBarInput')
 const list = document.querySelector('.list')
 const selectionButtonsSection = document.querySelector('.selection')
-const fetchURL = "./config/user.json"
-const fetchGITHUB = "https://fetch-projects.vercel.app/"
+const fetchURL = './config/user.json'
+const fetchGITHUB = 'https://fetch-projects.vercel.app/'
 let currentActiveClass = 'all'
 const dataContents = []
 // const main = async () => {
@@ -34,7 +34,7 @@ function generateTags (fileteredList) {
   return [...new Set((fileteredList.map(e => e.tags)).flat())]
 }
 async function displayDirs (typeDir, filteredContent) {
-  const { items, contents,username } = (await (await fetch(fetchURL)).json())
+  const { items, contents, username } = (await (await fetch(fetchURL)).json())
   searchInput.classList.remove('hide')
   if (typeDir === 'items') {
     items.forEach((dir, index) => {
@@ -115,7 +115,7 @@ function generator (dir, type) {
                                ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
                         </div>
                     </a>`;break
-                    case 'ossprojects':
+      case 'ossprojects':
         return `
                     <a href= "${dir.url ? dir.url : ('/showcase.html?type=' + dir.type)} " target='_blank'>
                         <div>
@@ -170,25 +170,21 @@ function filterSelection (className) {
   searchDisplay('', currentActiveClass)
 }
 
-
-
-async function fetchGithubProjects(username) {
-    const {data,tags} = (await (await fetch(fetchGITHUB+"api/v1/allprojects?username="+username)).json());
-    const formattedData = data.map(project => {
-      return {
-        title:project.name,
-        description:project.description,
-        url:project.html_url,
-        icon:project.icon,
-        url:project.html_url,
-        stars:project.stargazers_count,
-        "type":"ossprojects",
-        version:project.package.version,
-        demoURL:project.homepage ? project.homepage : undefined,
-        tags:project.topics.filter(value => tags.includes(value))
-      }
-    })
-return formattedData 
+async function fetchGithubProjects (username) {
+  const { data, tags } = (await (await fetch(fetchGITHUB + 'api/v1/allprojects?username=' + username)).json())
+  const formattedData = data.map(project => {
+    return {
+      title: project.name,
+      description: project.description,
+      url: project.html_url,
+      icon: project.icon,
+      url: project.html_url,
+      stars: project.stargazers_count,
+      type: 'ossprojects',
+      version: project.package.version,
+      demoURL: project.homepage ? project.homepage : undefined,
+      tags: project.topics.filter(value => tags.includes(value))
+    }
+  })
+  return formattedData
 }
-    
-  
