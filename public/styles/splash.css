@@ -1,0 +1,32 @@
+.splash-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    
+    z-index: 1000;
+    transition: opacity 1s;
+  }
+  
+  .splash-screen h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .splash-screen p {
+    font-size: 24px;
+  }
+  
+  .main-content {
+    transition: opacity 1s;
+  }
+  #warning {
+color: red;  
+}
