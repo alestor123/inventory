@@ -80,7 +80,7 @@ function generator (dir, type) {
   // const tags = dir.tags ? dir.tags : false;
   if (type === 'main') {
     return `
-<a href= "${dir.url ? dir.url : ('/showcase.html?type=' + dir.type)} " target='_blank'>
+<a href= "${dir.url ? dir.url : ('showcase.html?type=' + dir.type)} " target='_blank'>
     <div>
         <h3>
         <span class='${dir.icon}' ></span>
@@ -94,7 +94,7 @@ function generator (dir, type) {
     switch (dir.type) {
       case 'socials':
         return `
-                    <a href= "${dir.url ? dir.url : ('/showcase.html?type=' + dir.type)} " target='_blank'>
+                    <a href= "${dir.url ? dir.url : ('showcase.html?type=' + dir.type)} " target='_blank'>
                         <div>
                             <h3>
                             <span class='${dir.icon}' ></span>
@@ -106,7 +106,7 @@ function generator (dir, type) {
                     </a>`;break
       case 'main':
         return `
-                    <a href= "${dir.url ? dir.url : ('/showcase.html?type=' + dir.type)} " target='_blank'>
+                    <a href= "${dir.url ? dir.url : ('showcase.html?type=' + dir.type)} " target='_blank'>
                         <div>
                             <h3>
                             <span class='${dir.icon}' ></span>
@@ -118,7 +118,7 @@ function generator (dir, type) {
                     </a>`;break
       case 'ossprojects':
         return `
-                    <a href= "${dir.url ? dir.url : ('/showcase.html?type=' + dir.type)} " target='_blank'>
+                    <a href= "${dir.url ? dir.url : ('showcase.html?type=' + dir.type)} " target='_blank'>
                         <div>
                             <h3>
                             <span class='${dir.icon}' ></span>
@@ -128,7 +128,7 @@ function generator (dir, type) {
                                ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
                         </div>
                     </a>`;break
-        // <a href= "${dir.url ? dir.url : ("/showcase.html?type="+dir.type)} " target='_blank'>
+        // <a href= "${dir.url ? dir.url : ("showcase.html?type="+dir.type)} " target='_blank'>
       case 'softprojects':
       case 'hardprojects':
         return `
