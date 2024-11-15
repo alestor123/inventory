@@ -5,36 +5,37 @@ const fetchURL = './config/user.json'
 const fetchGITHUB = 'https://fetch-projects.vercel.app/'
 let currentActiveClass = 'all'
 const dataContents = []
-// const main = async () => {
-//     const {username} = (await (await fetch(fetchURL)).json());
-//     const data = (await (await fetch(`https://api.github.com/users/${username}`)).json());
-//     setProfile(data);
-// };
+const main = async (username) => {
+    // const {username} = (await (await fetch(fetchURL)).json());
+    const data = (await (await fetch(`https://api.github.com/users/${username}`)).json());
+    setProfile(data);
+};
 
-// function setProfile({bio,blog,avatar_url,followers,public_repos,name,company}) {
-// document.querySelector('.info').innerHTML = `
-// <figure>
-//             <img alt="User Profile" src="${avatar_url}" />
-//         </figure>
-//         <div>
-//             <h2 id="name"><a href=${blog}><strong>${name}</strong></a></h2>
-//             <p>${bio}</p>
-//             <p>
-//                 Followers: <strong>${followers}</strong>
-//                 Repos: <strong>${public_repos}</strong>
-//                 ${company ? "Work: "+company : "" }
+function setProfile({bio,blog,avatar_url,followers,public_repos,name,company}) {
+document.querySelector('.info').innerHTML = `
+<figure>
+            <img alt="User Profile" src="${avatar_url}" class="avatar" />
+        </figure>
+        <div>
+            <h2 id="name"><a href=${blog}><strong>${name}</strong></a></h2>
+            <p>${bio}</p>
+            <p>
+                Followers: <strong>${followers}</strong>
+                Repos: <strong>${public_repos}</strong>
+                ${company ? "Work: "+company : "" }
 
-//             </p>
+            </p>
 
-//         </div>
-//         `;
-// }
+        </div>
+        `;
+}
 
 function generateTags (fileteredList) {
   return [...new Set((fileteredList.map(e => e.tags)).flat())]
 }
 async function displayDirs (typeDir, filteredContent) {
   const { items, contents, username } = (await (await fetch(fetchURL)).json())
+  main(username)
   searchInput.classList.remove('hide')
   if (typeDir === 'items') {
     items.forEach((dir, index) => {
