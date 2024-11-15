@@ -99,7 +99,7 @@ function generator (dir, type) {
                             <span class='${dir.icon}' ></span>
                                 ${dir.title}
                             </h3>
-                            <p>${dir.description}</p>
+                            <p>${dir.description.length >= 35 ? dir.description.substr(0, 35) + '...' : dir.description}</p>
                                ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
                         </div>
                     </a>`;break
@@ -123,7 +123,7 @@ function generator (dir, type) {
                             <span class='${dir.icon}' ></span>
                                 ${dir.title}
                             </h3>
-                            <p>${dir.description}</p>
+                            <p>${shortenDescription(dir.description)}</p>
                                ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
                         </div>
                     </a>`;break
@@ -137,7 +137,7 @@ function generator (dir, type) {
                                                     <span class='${dir.icon}' ></span>
                                                         ${dir.title}
                                                     </h3>
-                                                    <p>${dir.description}</p>
+                                                    <p>${shortenDescription(dir.description)}</p>
                                                        ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
                                                 </div>
                                             </a>
@@ -187,4 +187,8 @@ async function fetchGithubProjects (username) {
     }
   })
   return formattedData
+}
+
+function shortenDescription (description) {
+  return description.length >= 35 ? description.substr(0, 35) + '...' : description
 }

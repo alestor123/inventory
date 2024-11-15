@@ -20,10 +20,11 @@
             "title": "RESUME",
             "description": "Skills & experience",
             "type":"link",
+            "url":"https://drive.google.com/file/d/1jx9-QpA0uwB5jYL7H3trExFC-UwUcBVc/view?usp=sharing",
             "icon": "fa-solid fa-file"
         },{
             "title": "OSS PROJECTS",
-            "description": "Skills & experience",
+            "description": "Code, collaborate, repeat",
             "type":"ossprojects",
             "icon": "fa-solid fa-code"
         },
@@ -68,7 +69,7 @@
             "description": "Home for my projects :)",
             "type":"socials",
             "url": "https://github.com/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-brands fa-github",
             "tags":["developer"]
         },
         {
@@ -76,44 +77,44 @@
             "description": "Mostly tech talks and memes",
             "type":"socials",
             "url": "https://twitter.com/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-brands fa-twitter",
             "tags":["developer"]
         },{
             "title": "LinkedIn",
             "description": "Career related stuff",
             "type":"socials",
             "url": "https://www.linkedin.com/in/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-brands fa-linkedin",
             "tags":["developer"]
         }
         ,{
             "title": "YOUTUBE",
-            "description": "Where ",
+            "description": "Code, cameras, action!/My tech adventures",
             "type":"socials",
-            "url": "https://www.linkedin.com/in/alestor123",
-            "icon": "fa-solid fa-comment",
+            "url": "https://www.youtube.com/@alestoraldous7036",
+            "icon": "fa-brands fa-youtube",
             "tags":["entertainment","developer"]
         },
         {
             "title": "BLOG",
-            "description": "Sharing my knowledge",
+            "description": "Code, life, and everything",
             "type":"socials",
             "url": "https://alestor123.is-a.dev/blog/",
             "icon": "fa-solid fa-comment",
             "tags":["personal","developer","entertainment"]
         },{
             "title": "Projects",
-            "description": "My favourite place :)",
+            "description": "Code, craft, repeat",
             "type":"socials",
             "url": "http://localhost:5500/showcase.html?type=softprojects",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-solid fa-folder",
             "tags":["developer"]
         },{
             "title": "DEV.TO",
-            "description": "My favourite place :)",
+            "description": "Code stories & lessons",
             "type":"socials",
             "url": "https://dev.to/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-brands fa-dev",
             "tags":["developer"]
         },
         {
@@ -121,53 +122,25 @@
             "description": "PURE PAIN",
             "type":"socials",
             "url": "https://leetcode.com/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-solid fa-trophy",
             "tags":["developer"]
         },{
             "title": "CODEWARS",
             "description": "challenging my coding skills",
             "type":"socials",
             "url": "https://www.codewars.com/users/alestor123",
-            "icon": "fa-solid fa-comment",
+            "icon": "fa-solid fa-trophy",
             "tags":["developer"]
         }
         ,{
-            "title": "HARDWARE PROJECTS TEST",
-            "description": "challenging my coding skills",
+            "title": "VOTING MACHINE",
+            "description": "Simple Voting System: Cast your vote with ease using my DIY voting machine, made with a calculator and relay for efficient vote counting",
             "type":"hardprojects",
             "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
             "icon": "fa-solid fa-comment",
-            "tags":["developer"]
-        }
-        ,{
-            "title": "HARDWARE PROJECTS TEST 2",
-            "description": "challenging my coding skills",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786"],
-            "type":"hardprojects",
-            "icon": "fa-solid fa-comment",
-            "tags":["RPI"]
-        }
-        ,{
-            "title": "HARDWARE PROJECTS TEST 3",
-            "description": "challenging my coding skills",
-            "type":"hardprojects",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
             "tags":["electrical"]
-        },{
-            "title": "HARDWARE PROJECTS TEST 4",
-            "description": "challenging my coding skills",
-            "type":"hardprojects",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
-            "tags":["embeddedsystem"]
-        },{
-            "title": "HARDWARE PROJECTS TEST 5",
-            "description": "challenging my coding skills",
-            "type":"hardprojects",
-            "icon": "fa-solid fa-comment",
-            "tags":["IOT"]
-        },{
+        }
+,   {
             "title": "SOFTWARE PROJECT 1",
             "description": "challenging my coding skills",
             "type":"softprojects",
