@@ -5,6 +5,8 @@ const fetchURL = './config/user.json'
 const fetchGITHUB = 'https://fetch-projects.vercel.app/'
 let currentActiveClass = 'all'
 const dataContents = []
+let allItems = [] // Store all items for filtering
+let searchTimeout = null // Debounce search
 const main = async (username) => {
     // const {username} = (await (await fetch(fetchURL)).json());
     const data = (await (await fetch(`https://api.github.com/users/${username}`)).json());
@@ -58,22 +60,80 @@ async function displayDirs (typeDir, filteredContent) {
   }
 }
 
+// Enhanced search with debouncing
 searchInput.addEventListener('input', (e) => {
   const search = e.target.value
-  searchDisplay(search, currentActiveClass)
+  
+  // Clear previous timeout
+  if (searchTimeout) {
+    clearTimeout(searchTimeout)
+  }
+  
+  // Debounce search for better performance
+  searchTimeout = setTimeout(() => {
+    searchDisplay(search, currentActiveClass)
+    updateResultsCount()
+  }, 300)
 })
 
+// Clear search on ESC key
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    searchInput.value = ''
+    searchDisplay('', currentActiveClass)
+    updateResultsCount()
+  }
+})
+
+// Enhanced search with multiple criteria
 function searchDisplay (search, tag) {
   const items = document.querySelectorAll('.itm')
-  const searchNormalize = search.toLowerCase()
-  // tag==all ignore other wise filter
+  const searchNormalize = search.toLowerCase().trim()
+  
   items.forEach((item) => {
     const normalText = item.innerText.toLowerCase()
     const className = item.className.toLowerCase()
-    // console.log(className)
-    if (normalText.includes(searchNormalize) && (tag && tag != 'all' ? className.includes(tag.toLowerCase()) : true)) item.classList.remove('remove')
-    else item.classList.add('remove')
+    
+    // Multi-word search support
+    const searchTerms = searchNormalize.split(' ').filter(term => term.length > 0)
+    const matchesSearch = searchTerms.length === 0 || searchTerms.every(term => normalText.includes(term))
+    
+    // Tag filtering
+    const matchesTag = tag === 'all' || className.includes(tag.toLowerCase())
+    
+    // Show/hide items with smooth transition
+    if (matchesSearch && matchesTag) {
+      item.classList.remove('remove')
+      item.style.display = ''
+    } else {
+      item.classList.add('remove')
+      item.style.display = 'none'
+    }
   })
+}
+
+// Update results count
+function updateResultsCount() {
+  const items = document.querySelectorAll('.itm')
+  const visibleItems = document.querySelectorAll('.itm:not(.remove)')
+  
+  // Create or update results counter
+  let counter = document.querySelector('.results-counter')
+  if (!counter) {
+    counter = document.createElement('div')
+    counter.className = 'results-counter'
+    const searchBar = document.querySelector('.searchBar')
+    if (searchBar) {
+      searchBar.appendChild(counter)
+    }
+  }
+  
+  if (searchInput.value.trim() || currentActiveClass !== 'all') {
+    counter.textContent = `Showing ${visibleItems.length} of ${items.length} items`
+    counter.style.display = 'block'
+  } else {
+    counter.style.display = 'none'
+  }
 }
 function generator (dir, type) {
 //     ${tags ? tags.map(tag => tag).join(' ') : ""}
@@ -153,23 +213,59 @@ function generator (dir, type) {
 */
 }
 function displayTags (tags) {
-  tags.forEach(tag => {
-    selectionButtonsSection.innerHTML += `<button class="btn ${tag}" onclick="filterSelection('${tag}')"> ${tag.toUpperCase()} </button>`
+  if (!selectionButtonsSection) return
+  
+  // Sort tags alphabetically
+  const sortedTags = tags.sort((a, b) => a.localeCompare(b))
+  
+  sortedTags.forEach(tag => {
+    const tagBtn = document.createElement('button')
+    tagBtn.className = `btn ${tag}`
+    tagBtn.textContent = tag.toUpperCase()
+    tagBtn.setAttribute('data-tag', tag)
+    tagBtn.onclick = () => filterSelection(tag)
+    selectionButtonsSection.appendChild(tagBtn)
   })
 }
 
 function filterSelection (className) {
-  selectionButtonsSection.classList.add('.' + currentActiveClass)
+  if (!selectionButtonsSection) return
+  
+  // Update active state
   const selectionButtons = document.querySelectorAll('.btn')
-  const selectedButton = document.querySelector('.' + className)
+  selectionButtons.forEach(btn => btn.classList.remove('active'))
+  
+  const selectedButton = document.querySelector(`.btn[data-tag="${className}"], .btn.${className}`)
+  if (selectedButton) {
+    selectedButton.classList.add('active')
+  }
+  
   currentActiveClass = className
-  const currentActiveButton = document.querySelector('.btn.active')
-  currentActiveButton.classList.remove('active')
-  currentActiveButton.className = currentActiveButton.className.replace('active', '')
-  selectedButton.className += ' active'
-  console.log(currentActiveClass)
-  searchDisplay('', currentActiveClass)
+  
+  // Apply filter with current search term
+  const currentSearch = searchInput ? searchInput.value : ''
+  searchDisplay(currentSearch, currentActiveClass)
+  updateResultsCount()
+  
+  // Smooth scroll to results
+  const firstVisibleItem = document.querySelector('.itm:not(.remove)')
+  if (firstVisibleItem) {
+    firstVisibleItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  }
 }
+
+// Clear all filters
+function clearFilters() {
+  if (searchInput) {
+    searchInput.value = ''
+  }
+  filterSelection('all')
+  updateResultsCount()
+}
+
+// Export filter function for global access
+window.filterSelection = filterSelection
+window.clearFilters = clearFilters
 
 async function fetchGithubProjects (username) {
   const { data, tags } = (await (await fetch(fetchGITHUB + 'api/v1/allprojects?username=' + username)).json())
@@ -191,5 +287,41 @@ async function fetchGithubProjects (username) {
 }
 
 function shortenDescription (description) {
-  return description.length >= 35 ? description.substr(0, 35) + '...' : description
+  if (!description) return ''
+  return description.length >= 35 ? description.substring(0, 35) + '...' : description
+}
+
+// Initialize search and filter system
+function initializeSearchAndFilter() {
+  // Add clear button to search
+  if (searchInput && !document.querySelector('.search-clear')) {
+    const clearBtn = document.createElement('button')
+    clearBtn.className = 'search-clear'
+    clearBtn.innerHTML = '<i class="fa-solid fa-times"></i>'
+    clearBtn.title = 'Clear search'
+    clearBtn.onclick = () => {
+      searchInput.value = ''
+      searchDisplay('', currentActiveClass)
+      updateResultsCount()
+      searchInput.focus()
+    }
+    
+    const searchBar = document.querySelector('.searchBar')
+    if (searchBar) {
+      searchBar.style.position = 'relative'
+      searchBar.appendChild(clearBtn)
+    }
+    
+    // Show/hide clear button
+    searchInput.addEventListener('input', () => {
+      clearBtn.style.display = searchInput.value ? 'block' : 'none'
+    })
+  }
+}
+
+// Call initialization when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeSearchAndFilter)
+} else {
+  initializeSearchAndFilter()
 }

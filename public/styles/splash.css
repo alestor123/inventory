@@ -4,29 +4,98 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    background: #0a0a0a;
+    background-image: 
+      radial-gradient(at 50% 50%, rgba(137, 247, 52, 0.1) 0px, transparent 50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
-    
     z-index: 1000;
     transition: opacity 1s;
+    overflow: hidden;
+  }
+  
+  .splash-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(137, 247, 52, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(137, 247, 52, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: gridPulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
   }
   
   .splash-screen h1 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
+    text-shadow: 
+      0 0 10px rgba(137, 247, 52, 0.8),
+      0 0 20px rgba(137, 247, 52, 0.6),
+      0 0 30px rgba(137, 247, 52, 0.4),
+      0 0 40px rgba(0, 255, 136, 0.3);
+    animation: glowPulse 2s ease-in-out infinite, textFlicker 4s infinite;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 4px;
+  }
+  
+  @keyframes glowPulse {
+    0%, 100% { 
+      text-shadow: 
+        0 0 10px rgba(137, 247, 52, 0.8),
+        0 0 20px rgba(137, 247, 52, 0.6),
+        0 0 30px rgba(137, 247, 52, 0.4);
+    }
+    50% { 
+      text-shadow: 
+        0 0 20px rgba(137, 247, 52, 1),
+        0 0 30px rgba(137, 247, 52, 0.8),
+        0 0 40px rgba(137, 247, 52, 0.6),
+        0 0 50px rgba(0, 255, 136, 0.4);
+    }
+  }
+  
+  @keyframes textFlicker {
+    0%, 100% { opacity: 1; }
+    41%, 43% { opacity: 0.8; }
+    42% { opacity: 1; }
   }
   
   .splash-screen p {
     font-size: 24px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
   }
   
   .main-content {
     transition: opacity 1s;
   }
   #warning {
-color: red;  
-}
+    color: #ff0040;
+    text-shadow: 
+      0 0 10px rgba(255, 0, 64, 0.8),
+      0 0 20px rgba(255, 0, 64, 0.6);
+    animation: warningBlink 1.5s infinite;
+  }
+  
+  @keyframes warningBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }

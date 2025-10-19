@@ -4,61 +4,61 @@
     "items":[
         {
             "title": "SOFTWARE PROJECTS",
-            "description": "My favourite place :)",
+            "description": "Crafting digital experiences with code",
             "type":"softprojects",
             "icon": "fa-solid fa-computer"
         },
         {
             "title": "HARDWARE PROJECTS",
-            "description": "Circuitry & innovation",
+            "description": "Building the future with circuits",
             "type":"hardprojects",
-            "mainDescription": "My favourite place :)",
+            "mainDescription": "Electronics meets innovation",
             "icon": "fa-solid fa-microchip"
         },
-
         {
             "title": "RESUME",
-            "description": "Skills & experience",
+            "description": "Skills, experience & achievements",
             "type":"link",
             "url":"https://drive.google.com/file/d/1jx9-QpA0uwB5jYL7H3trExFC-UwUcBVc/view?usp=sharing",
             "icon": "fa-solid fa-file"
-        },{
+        },
+        {
             "title": "OSS PROJECTS",
-            "description": "Code, collaborate, repeat",
+            "description": "Contributing to open source",
             "type":"ossprojects",
             "icon": "fa-solid fa-code"
         },
         {
             "title": "WORKSHOPS",
-            "description": "Knowledge sharing",
+            "description": "Teaching & knowledge sharing",
             "type":"workshops",
             "icon": "fa-solid fa-chalkboard"
         },
         {
             "title": "TALKS",
-            "description": "Spreading ideas",
+            "description": "Speaking & presentations",
             "type":"talks",
             "icon": "fa-solid fa-microphone"
         },
         {
             "title": "CERTIFICATES",
-            "description": "Proof of expertise",
-            "type":"talks",
-            "mainDescription": "My favourite place :)",
+            "description": "Achievements & credentials",
+            "type":"certificates",
+            "mainDescription": "Professional certifications",
             "icon": "fa-solid fa-trophy"
         },
         {
             "title": "TIMELINE",
-            "description": "Journey of growth",
-            "type":"talks",
-            "mainDescription": "My favourite place :)",
+            "description": "My journey through time",
+            "type":"timeline",
+            "mainDescription": "Career milestones",
             "icon": "fa-solid fa-history"
         },
         {
             "title": "SOCIALS",
-            "description": "You can find me over there",
+            "description": "Connect with me online",
             "type":"socials",
-            "mainDescription": "My favourite place :)",
+            "mainDescription": "Social media presence",
             "icon": "fa-solid fa-share"
         }
         
@@ -66,117 +66,290 @@
     "contents":[
         {
             "title": "Github",
-            "description": "Home for my projects :)",
+            "description": "Open source contributions & personal projects",
             "type":"socials",
             "url": "https://github.com/alestor123",
             "icon": "fa-brands fa-github",
-            "tags":["developer"]
+            "tags":["developer","opensource"]
         },
         {
             "title": "Twitter",
-            "description": "Mostly tech talks and memes",
+            "description": "Tech insights, coding tips & dev life",
             "type":"socials",
             "url": "https://twitter.com/alestor123",
             "icon": "fa-brands fa-twitter",
-            "tags":["developer"]
-        },{
+            "tags":["developer","social"]
+        },
+        {
             "title": "LinkedIn",
-            "description": "Career related stuff",
+            "description": "Professional network & career updates",
             "type":"socials",
             "url": "https://www.linkedin.com/in/alestor123",
             "icon": "fa-brands fa-linkedin",
-            "tags":["developer"]
-        }
-        ,{
+            "tags":["developer","professional"]
+        },
+        {
             "title": "YOUTUBE",
-            "description": "Code, cameras, action!/My tech adventures",
+            "description": "Coding tutorials & tech reviews",
             "type":"socials",
             "url": "https://www.youtube.com/@alestoraldous7036",
             "icon": "fa-brands fa-youtube",
-            "tags":["entertainment","developer"]
+            "tags":["entertainment","developer","tutorial"]
         },
         {
             "title": "BLOG",
-            "description": "Code, life, and everything",
+            "description": "Technical articles & development insights",
             "type":"socials",
             "url": "https://alestor123.is-a.dev/blog/",
-            "icon": "fa-solid fa-comment",
-            "tags":["personal","developer","entertainment"]
-        },{
-            "title": "Projects",
-            "description": "Code, craft, repeat",
-            "type":"socials",
-            "url": "http://localhost:5500/showcase.html?type=softprojects",
-            "icon": "fa-solid fa-folder",
-            "tags":["developer"]
-        },{
+            "icon": "fa-solid fa-blog",
+            "tags":["personal","developer","writing"]
+        },
+        {
             "title": "DEV.TO",
-            "description": "Code stories & lessons",
+            "description": "Developer community & tech articles",
             "type":"socials",
             "url": "https://dev.to/alestor123",
             "icon": "fa-brands fa-dev",
-            "tags":["developer"]
+            "tags":["developer","community"]
         },
         {
             "title": "LEETCODE",
-            "description": "PURE PAIN",
+            "description": "Algorithm challenges & problem solving",
             "type":"socials",
             "url": "https://leetcode.com/alestor123",
-            "icon": "fa-solid fa-trophy",
-            "tags":["developer"]
-        },{
+            "icon": "fa-solid fa-code",
+            "tags":["developer","competitive"]
+        },
+        {
             "title": "CODEWARS",
-            "description": "challenging my coding skills",
+            "description": "Code kata & skill progression",
             "type":"socials",
             "url": "https://www.codewars.com/users/alestor123",
             "icon": "fa-solid fa-trophy",
-            "tags":["developer"]
-        }
-        ,{
+            "tags":["developer","competitive"]
+        },
+        {
+            "title": "DISCORD",
+            "description": "Join my developer community",
+            "type":"socials",
+            "url": "https://discord.gg/example",
+            "icon": "fa-brands fa-discord",
+            "tags":["community","developer"]
+        },
+        {
+            "title": "STACK OVERFLOW",
+            "description": "Helping developers solve problems",
+            "type":"socials",
+            "url": "https://stackoverflow.com/users/example",
+            "icon": "fa-brands fa-stack-overflow",
+            "tags":["developer","community"]
+        },
+        {
+            "title": "AI CHATBOT PLATFORM",
+            "description": "Full-stack conversational AI platform with NLP, real-time chat, and multi-language support. Built with React, Node.js, and TensorFlow for intelligent responses.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/ai-chatbot",
+            "liveDemo":"https://ai-chatbot-demo.vercel.app",
+            "article":"https://dev.to/alestor123/building-ai-chatbot",
+            "demoImage":["https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800","https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800","https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800"],
+            "icon": "fa-solid fa-robot",
+            "tags":["reactjs","nodejs","ai","tensorflow"]
+        },
+        {
+            "title": "BLOCKCHAIN WALLET",
+            "description": "Secure cryptocurrency wallet with multi-chain support, transaction history, and real-time price tracking. Features hardware wallet integration and DeFi protocols.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/crypto-wallet",
+            "liveDemo":"https://crypto-wallet-demo.netlify.app",
+            "article":"https://dev.to/alestor123/blockchain-wallet-guide",
+            "demoImage":["https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800","https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800"],
+            "icon": "fa-solid fa-wallet",
+            "tags":["reactjs","blockchain","web3","ethereum"]
+        },
+        {
+            "title": "REAL-TIME ANALYTICS DASHBOARD",
+            "description": "Enterprise-grade analytics platform with live data visualization, custom metrics, and predictive insights. Processes millions of events per second.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/analytics-dashboard",
+            "liveDemo":"https://analytics-demo.vercel.app",
+            "demoImage":["https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800","https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800","https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800"],
+            "icon": "fa-solid fa-chart-line",
+            "tags":["reactjs","nodejs","d3js","analytics"]
+        },
+        {
+            "title": "E-COMMERCE PLATFORM",
+            "description": "Modern online marketplace with payment integration, inventory management, and AI-powered recommendations. Supports multi-vendor architecture.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/ecommerce-platform",
+            "liveDemo":"https://shop-demo.vercel.app",
+            "article":"https://dev.to/alestor123/building-ecommerce",
+            "demoImage":["https://images.unsplash.com/photo-1557821552-17105176677c?w=800","https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800"],
+            "icon": "fa-solid fa-shopping-cart",
+            "tags":["nextjs","stripe","mongodb","redis"]
+        },
+        {
+            "title": "VIDEO STREAMING SERVICE",
+            "description": "Netflix-like streaming platform with adaptive bitrate, CDN integration, and content recommendation engine. Supports 4K streaming and offline downloads.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/video-streaming",
+            "liveDemo":"https://stream-demo.vercel.app",
+            "demoVideo":"https://player.vimeo.com/video/76979871",
+            "icon": "fa-solid fa-video",
+            "tags":["reactjs","nodejs","ffmpeg","aws"]
+        },
+        {
+            "title": "COLLABORATIVE CODE EDITOR",
+            "description": "Real-time collaborative IDE with syntax highlighting, live cursors, and integrated terminal. Supports 50+ programming languages and pair programming.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/code-editor",
+            "liveDemo":"https://editor-demo.netlify.app",
+            "demoImage":["https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800","https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"],
+            "icon": "fa-solid fa-code",
+            "tags":["reactjs","websocket","monaco","docker"]
+        },
+        {
+            "title": "SOCIAL MEDIA ANALYTICS",
+            "description": "Comprehensive social media monitoring tool with sentiment analysis, trend detection, and automated reporting. Tracks engagement across platforms.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/social-analytics",
+            "article":"https://dev.to/alestor123/social-media-analytics",
+            "demoImage":["https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800"],
+            "icon": "fa-solid fa-hashtag",
+            "tags":["python","nodejs","nlp","api"]
+        },
+        {
+            "title": "IOT SMART HOME HUB",
+            "description": "Automated DIY smart home system with Arduino & ESP32. Controls lighting, temperature, security cameras with voice commands and mobile app integration.",
+            "type":"hardprojects",
+            "sourceCode":"https://github.com/alestor123/smart-home",
+            "article":"https://dev.to/alestor123/iot-smart-home",
+            "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
+            "icon": "fa-solid fa-home",
+            "tags":["arduino","iot","esp32","automation"]
+        },
+        {
+            "title": "ROBOTIC ARM",
+            "description": "6-axis robotic arm with precision control, object detection using computer vision, and programmable movements. Built with servo motors and Raspberry Pi.",
+            "type":"hardprojects",
+            "sourceCode":"https://github.com/alestor123/robotic-arm",
+            "demoImage":["https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800","https://images.unsplash.com/photo-1563207153-f403bf289096?w=800"],
+            "icon": "fa-solid fa-robot",
+            "tags":["robotics","python","opencv","raspberrypi"]
+        },
+        {
             "title": "VOTING MACHINE",
-            "description": "Simple Voting System: Cast your vote with ease using my DIY voting machine, made with a calculator and relay for efficient vote counting",
+            "description": "Electronic voting system with secure authentication, real-time vote counting, and tamper-proof design. Features LCD display and encrypted data storage.",
             "type":"hardprojects",
             "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
-            "icon": "fa-solid fa-comment",
-            "tags":["electrical"]
-        }
-,   {
-            "title": "SOFTWARE PROJECT 1",
-            "description": "challenging my coding skills",
-            "type":"softprojects",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
-            "tags":["reactjs"]
-        },{
-            "title": "SOFTWARE PROJECT 2",
-            "description": "challenging my coding skills",
-            "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
-            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
-            "article":"https://dev.to/alestor123",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
-            "tags":["reactjs"]
-        },{
-            "title": "SOFTWARE PROJECT 3",
-            "description": "challenging my coding skills",
-            "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
-            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
-            "article":"https://dev.to/alestor123",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
-            "tags":["nodejs"]
-        },{
-            "title": "SOFTWARE PROJECT 4",
-            "description": "challenging my coding skills",
-            "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/POOKALAM-2K24",
-            "liveDemo":"https://github.com/alestor123/POOKALAM-2K24",
-            "article":"https://dev.to/alestor123",
-            "demoImage":["https://ms.codes/cdn/shop/articles/digipen-computer-engineering-2nd-year-four-legged-friend-im.jpg?v=1707824786","https://i.ytimg.com/vi/rS9CbsohFGk/maxresdefault.jpg","https://pimylifeup.com/wp-content/uploads/2021/02/Raspberry-Pi-Projects-Featured.jpg"],
-            "icon": "fa-solid fa-comment",
-            "tags":["expressjs"]
+            "sourceCode":"https://github.com/alestor123/voting-machine",
+            "icon": "fa-solid fa-vote-yea",
+            "tags":["electrical","arduino","security"]
+        },
+        {
+            "title": "DRONE AUTOPILOT",
+            "description": "Custom flight controller for quadcopter with GPS navigation, obstacle avoidance, and autonomous flight modes. Includes telemetry and FPV system.",
+            "type":"hardprojects",
+            "demoImage":["https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800","https://images.unsplash.com/photo-1508614999368-9260051292e5?w=800"],
+            "icon": "fa-solid fa-helicopter",
+            "tags":["drone","embedded","sensors","gps"]
+        },
+        {
+            "title": "WEATHER STATION",
+            "description": "IoT weather monitoring system with temperature, humidity, pressure sensors. Uploads data to cloud dashboard with historical trends and forecasting.",
+            "type":"hardprojects",
+            "sourceCode":"https://github.com/alestor123/weather-station",
+            "liveDemo":"https://weather-dashboard.vercel.app",
+            "demoImage":["https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800"],
+            "icon": "fa-solid fa-cloud-sun",
+            "tags":["iot","sensors","esp32","api"]
+        },
+        {
+            "title": "INTRODUCTION TO WEB DEVELOPMENT",
+            "description": "Comprehensive workshop covering HTML, CSS, JavaScript fundamentals, and modern web development practices. Hands-on projects included.",
+            "type":"workshops",
+            "url":"https://workshop-webdev.example.com",
+            "icon": "fa-solid fa-laptop-code",
+            "tags":["webdev","beginner","frontend"]
+        },
+        {
+            "title": "REACT & MODERN JAVASCRIPT",
+            "description": "Advanced workshop on React hooks, state management, and building scalable applications. Covers Redux, Context API, and performance optimization.",
+            "type":"workshops",
+            "url":"https://workshop-react.example.com",
+            "icon": "fa-brands fa-react",
+            "tags":["reactjs","javascript","advanced"]
+        },
+        {
+            "title": "MACHINE LEARNING BASICS",
+            "description": "Introduction to ML algorithms, neural networks, and practical applications. Includes Python, TensorFlow, and real-world datasets.",
+            "type":"workshops",
+            "url":"https://workshop-ml.example.com",
+            "icon": "fa-solid fa-brain",
+            "tags":["ai","python","machinelearning"]
+        },
+        {
+            "title": "BUILDING MICROSERVICES",
+            "description": "Workshop on microservices architecture, Docker, Kubernetes, and cloud deployment. Covers API design and service communication.",
+            "type":"workshops",
+            "url":"https://workshop-microservices.example.com",
+            "icon": "fa-solid fa-server",
+            "tags":["backend","docker","kubernetes"]
+        },
+        {
+            "title": "THE FUTURE OF WEB3",
+            "description": "Tech talk exploring blockchain technology, decentralized applications, and the evolution of the internet. Discussed at TechConf 2024.",
+            "type":"talks",
+            "url":"https://techconf2024.example.com/talks/web3",
+            "icon": "fa-solid fa-link",
+            "tags":["blockchain","web3","conference"]
+        },
+        {
+            "title": "BUILDING SCALABLE SYSTEMS",
+            "description": "Presentation on system design, load balancing, and handling millions of users. Shared insights from production experience.",
+            "type":"talks",
+            "url":"https://devcon.example.com/talks/scalability",
+            "icon": "fa-solid fa-network-wired",
+            "tags":["architecture","scalability","backend"]
+        },
+        {
+            "title": "AI IN MODERN APPLICATIONS",
+            "description": "Talk on integrating AI/ML into web applications, practical use cases, and ethical considerations. Presented at AI Summit 2024.",
+            "type":"talks",
+            "url":"https://aisummit.example.com/talks/ai-apps",
+            "icon": "fa-solid fa-microchip",
+            "tags":["ai","machinelearning","ethics"]
+        },
+        {
+            "title": "AWS CERTIFIED SOLUTIONS ARCHITECT",
+            "description": "Professional certification for designing distributed systems on AWS",
+            "type":"certificates",
+            "url":"https://aws.amazon.com/certification/",
+            "icon": "fa-brands fa-aws",
+            "tags":["cloud","aws","architecture"]
+        },
+        {
+            "title": "GOOGLE CLOUD PROFESSIONAL",
+            "description": "Advanced certification in Google Cloud Platform services and architecture",
+            "type":"certificates",
+            "url":"https://cloud.google.com/certification",
+            "icon": "fa-brands fa-google",
+            "tags":["cloud","gcp","professional"]
+        },
+        {
+            "title": "KUBERNETES ADMINISTRATOR",
+            "description": "Certified Kubernetes Administrator (CKA) for container orchestration",
+            "type":"certificates",
+            "url":"https://www.cncf.io/certification/cka/",
+            "icon": "fa-solid fa-dharmachakra",
+            "tags":["kubernetes","devops","containers"]
+        },
+        {
+            "title": "TENSORFLOW DEVELOPER",
+            "description": "TensorFlow Developer Certificate for machine learning expertise",
+            "type":"certificates",
+            "url":"https://www.tensorflow.org/certificate",
+            "icon": "fa-solid fa-brain",
+            "tags":["ai","tensorflow","machinelearning"]
         }
     ],
     "timeline":[
