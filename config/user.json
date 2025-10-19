@@ -1,5 +1,16 @@
 {
     "username":"alestor123",
+    "fullName":"Alestor Aldous",
+    "tagline":"A Mortal Developer With Immortal Dreams",
+    "bio":"Self-taught Full Stack Developer | OSS Lover | CLI Enthusiast | Student Developer passionate about coding, electronics, and badminton",
+    "location":"Kerala, India",
+    "website":"https://alestor123.is-a.dev/",
+    "githubJoined":"2019-05-26",
+    "githubStats":{
+        "repositories":307,
+        "followers":39,
+        "following":297
+    },
     "platformFetch":["ossprojects"],
     "items":[
         {
@@ -50,7 +61,8 @@
         {
             "title": "TIMELINE",
             "description": "My journey through time",
-            "type":"timeline",
+            "type":"link",
+            "url":"timeline.html",
             "mainDescription": "Career milestones",
             "icon": "fa-solid fa-history"
         },
@@ -129,234 +141,238 @@
             "tags":["developer","competitive"]
         },
         {
-            "title": "DISCORD",
-            "description": "Join my developer community",
+            "title": "INSTAGRAM",
+            "description": "Personal moments & tech journey",
             "type":"socials",
-            "url": "https://discord.gg/example",
-            "icon": "fa-brands fa-discord",
-            "tags":["community","developer"]
+            "url": "https://www.instagram.com/alestor123",
+            "icon": "fa-brands fa-instagram",
+            "tags":["social","personal"]
         },
         {
-            "title": "STACK OVERFLOW",
-            "description": "Helping developers solve problems",
-            "type":"socials",
-            "url": "https://stackoverflow.com/users/example",
-            "icon": "fa-brands fa-stack-overflow",
-            "tags":["developer","community"]
-        },
-        {
-            "title": "AI CHATBOT PLATFORM",
-            "description": "Full-stack conversational AI platform with NLP, real-time chat, and multi-language support. Built with React, Node.js, and TensorFlow for intelligent responses.",
+            "title": "MANGA-CLI",
+            "description": "CLI tool to fetch and read manga in the comfort of your terminal. Download manga as PDFs with an awesome command-line interface.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/ai-chatbot",
-            "liveDemo":"https://ai-chatbot-demo.vercel.app",
-            "article":"https://dev.to/alestor123/building-ai-chatbot",
-            "demoImage":["https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800","https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800","https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800"],
-            "icon": "fa-solid fa-robot",
-            "tags":["reactjs","nodejs","ai","tensorflow"]
+            "sourceCode":"https://github.com/alestor123/MANGA-CLI",
+            "demoImage":["https://images.unsplash.com/photo-1612178537253-bccd437b730e?w=800"],
+            "icon": "fa-solid fa-book",
+            "tags":["cli","nodejs","manga","pdf"],
+            "stars":7
         },
         {
-            "title": "BLOCKCHAIN WALLET",
-            "description": "Secure cryptocurrency wallet with multi-chain support, transaction history, and real-time price tracking. Features hardware wallet integration and DeFi protocols.",
+            "title": "AVOID-SHAME",
+            "description": "Clever JavaScript tool for avoiding console shaming by detecting and filtering console logs. Protects your code from unwanted console.log statements.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/crypto-wallet",
-            "liveDemo":"https://crypto-wallet-demo.netlify.app",
-            "article":"https://dev.to/alestor123/blockchain-wallet-guide",
-            "demoImage":["https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800","https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800"],
-            "icon": "fa-solid fa-wallet",
-            "tags":["reactjs","blockchain","web3","ethereum"]
+            "sourceCode":"https://github.com/alestor123/AVOID-SHAME",
+            "icon": "fa-solid fa-shield-halved",
+            "tags":["javascript","cli","devtools","console"],
+            "stars":4
         },
         {
-            "title": "REAL-TIME ANALYTICS DASHBOARD",
-            "description": "Enterprise-grade analytics platform with live data visualization, custom metrics, and predictive insights. Processes millions of events per second.",
+            "title": "SET-YEAR",
+            "description": "Time-travel your Git history! CLI tool to set your commit history back to any year you want. Perfect for GitHub contribution graph customization.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/analytics-dashboard",
-            "liveDemo":"https://analytics-demo.vercel.app",
-            "demoImage":["https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800","https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800","https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800"],
-            "icon": "fa-solid fa-chart-line",
-            "tags":["reactjs","nodejs","d3js","analytics"]
+            "sourceCode":"https://github.com/alestor123/SET-YEAR",
+            "icon": "fa-solid fa-clock-rotate-left",
+            "tags":["cli","git","nodejs","github"],
+            "stars":2
         },
         {
-            "title": "E-COMMERCE PLATFORM",
-            "description": "Modern online marketplace with payment integration, inventory management, and AI-powered recommendations. Supports multi-vendor architecture.",
+            "title": "REMOVE-COMMENT",
+            "description": "Automated tool for removing comments from your codebase. Clean up your code directory with this simple CLI application.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/ecommerce-platform",
-            "liveDemo":"https://shop-demo.vercel.app",
-            "article":"https://dev.to/alestor123/building-ecommerce",
-            "demoImage":["https://images.unsplash.com/photo-1557821552-17105176677c?w=800","https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800"],
-            "icon": "fa-solid fa-shopping-cart",
-            "tags":["nextjs","stripe","mongodb","redis"]
+            "sourceCode":"https://github.com/alestor123/REMOVE-COMMENT",
+            "icon": "fa-solid fa-eraser",
+            "tags":["cli","nodejs","javascript","tool"],
+            "stars":2
         },
         {
-            "title": "VIDEO STREAMING SERVICE",
-            "description": "Netflix-like streaming platform with adaptive bitrate, CDN integration, and content recommendation engine. Supports 4K streaming and offline downloads.",
+            "title": "ASCII-HEADER",
+            "description": "Generate beautiful ASCII art headers for your code files. Add stylish banners and documentation headers with figlet-powered ASCII fonts.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/video-streaming",
-            "liveDemo":"https://stream-demo.vercel.app",
-            "demoVideo":"https://player.vimeo.com/video/76979871",
-            "icon": "fa-solid fa-video",
-            "tags":["reactjs","nodejs","ffmpeg","aws"]
+            "sourceCode":"https://github.com/alestor123/ASCII-HEADER",
+            "icon": "fa-solid fa-heading",
+            "tags":["cli","nodejs","ascii-art","generator"],
+            "stars":2
         },
         {
-            "title": "COLLABORATIVE CODE EDITOR",
-            "description": "Real-time collaborative IDE with syntax highlighting, live cursors, and integrated terminal. Supports 50+ programming languages and pair programming.",
+            "title": "WEB-ENV-MANAGE",
+            "description": "Desktop application for managing environment variables across web projects. Built with Electron for cross-platform support on Windows, macOS, and Linux.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/code-editor",
-            "liveDemo":"https://editor-demo.netlify.app",
-            "demoImage":["https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800","https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"],
-            "icon": "fa-solid fa-code",
-            "tags":["reactjs","websocket","monaco","docker"]
+            "sourceCode":"https://github.com/alestor123/WEB-ENV-MANAGE",
+            "icon": "fa-solid fa-gear",
+            "tags":["electron","nodejs","desktop","devtool"],
+            "stars":2
         },
         {
-            "title": "SOCIAL MEDIA ANALYTICS",
-            "description": "Comprehensive social media monitoring tool with sentiment analysis, trend detection, and automated reporting. Tracks engagement across platforms.",
+            "title": "IS-CONVENTIONAL",
+            "description": "Validate commit messages against conventional commit standards. Ensures your Git commits follow best practices and conventions.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/social-analytics",
-            "article":"https://dev.to/alestor123/social-media-analytics",
-            "demoImage":["https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800"],
-            "icon": "fa-solid fa-hashtag",
-            "tags":["python","nodejs","nlp","api"]
+            "sourceCode":"https://github.com/alestor123/IS-CONVENTIONAL",
+            "icon": "fa-solid fa-check-circle",
+            "tags":["git","nodejs","commit","validation"],
+            "stars":2
         },
         {
-            "title": "IOT SMART HOME HUB",
-            "description": "Automated DIY smart home system with Arduino & ESP32. Controls lighting, temperature, security cameras with voice commands and mobile app integration.",
+            "title": "CREATE-PROFILE",
+            "description": "Interactive CLI generator for creating stunning GitHub profile READMEs. Build your profile with prompts and templates.",
+            "type":"softprojects",
+            "sourceCode":"https://github.com/alestor123/CREATE-PROFILE",
+            "icon": "fa-brands fa-github",
+            "tags":["cli","nodejs","github","generator"],
+            "stars":1
+        },
+        {
+            "title": "How to setup login password for raspberry pi",
+            "description": "Tutorial on setting up login password security for Raspberry Pi. Essential security configuration for embedded Linux systems.",
             "type":"hardprojects",
-            "sourceCode":"https://github.com/alestor123/smart-home",
-            "article":"https://dev.to/alestor123/iot-smart-home",
-            "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
-            "icon": "fa-solid fa-home",
-            "tags":["arduino","iot","esp32","automation"]
+            "demoVideo":"https://www.youtube.com/watch?v=9kXehQ6tltA",
+            "icon": "fa-brands fa-raspberry-pi",
+            "tags":["raspberrypi","linux","security","embedded"]
         },
         {
-            "title": "ROBOTIC ARM",
-            "description": "6-axis robotic arm with precision control, object detection using computer vision, and programmable movements. Built with servo motors and Raspberry Pi.",
+            "title": "Full bridge rectifier",
+            "description": "Building a full bridge rectifier circuit for AC to DC conversion. Essential electronics project for power supply design.",
             "type":"hardprojects",
-            "sourceCode":"https://github.com/alestor123/robotic-arm",
-            "demoImage":["https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800","https://images.unsplash.com/photo-1563207153-f403bf289096?w=800"],
-            "icon": "fa-solid fa-robot",
-            "tags":["robotics","python","opencv","raspberrypi"]
+            "demoVideo":"https://www.youtube.com/watch?v=BLu8a9EOFHw",
+            "icon": "fa-solid fa-bolt",
+            "tags":["electronics","circuits","power","rectifier"]
         },
         {
-            "title": "VOTING MACHINE",
-            "description": "Electronic voting system with secure authentication, real-time vote counting, and tamper-proof design. Features LCD display and encrypted data storage.",
+            "title": "How to make a simple amplifier using lm386",
+            "description": "Building a simple audio amplifier circuit using the LM386 IC. Perfect beginner project for audio electronics.",
             "type":"hardprojects",
-            "demoVideo":"https://player.vimeo.com/video/1027937493?h=93661452e5",
-            "sourceCode":"https://github.com/alestor123/voting-machine",
-            "icon": "fa-solid fa-vote-yea",
-            "tags":["electrical","arduino","security"]
+            "demoVideo":"https://www.youtube.com/watch?v=1oWBqfXYSiM",
+            "icon": "fa-solid fa-volume-high",
+            "tags":["electronics","audio","amplifier","lm386"]
         },
         {
-            "title": "DRONE AUTOPILOT",
-            "description": "Custom flight controller for quadcopter with GPS navigation, obstacle avoidance, and autonomous flight modes. Includes telemetry and FPV system.",
+            "title": "How to make your own portable boom box",
+            "description": "DIY portable boom box project with speakers and amplifier. Build your own custom audio system from scratch.",
             "type":"hardprojects",
-            "demoImage":["https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800","https://images.unsplash.com/photo-1508614999368-9260051292e5?w=800"],
-            "icon": "fa-solid fa-helicopter",
-            "tags":["drone","embedded","sensors","gps"]
+            "demoVideo":"https://www.youtube.com/watch?v=cugXprzRacU",
+            "icon": "fa-solid fa-radio",
+            "tags":["audio","diy","speakers","portable"]
         },
         {
-            "title": "WEATHER STATION",
-            "description": "IoT weather monitoring system with temperature, humidity, pressure sensors. Uploads data to cloud dashboard with historical trends and forecasting.",
+            "title": "How to control servo motor using raspberry pi",
+            "description": "Control servo motors with Raspberry Pi GPIO pins. Learn PWM control and servo motor interfacing for robotics projects.",
             "type":"hardprojects",
-            "sourceCode":"https://github.com/alestor123/weather-station",
-            "liveDemo":"https://weather-dashboard.vercel.app",
-            "demoImage":["https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800"],
-            "icon": "fa-solid fa-cloud-sun",
-            "tags":["iot","sensors","esp32","api"]
+            "demoVideo":"https://www.youtube.com/watch?v=cmUyv50uH7c",
+            "icon": "fa-brands fa-raspberry-pi",
+            "tags":["raspberrypi","servo","motor","robotics"]
         },
         {
-            "title": "INTRODUCTION TO WEB DEVELOPMENT",
-            "description": "Comprehensive workshop covering HTML, CSS, JavaScript fundamentals, and modern web development practices. Hands-on projects included.",
-            "type":"workshops",
-            "url":"https://workshop-webdev.example.com",
-            "icon": "fa-solid fa-laptop-code",
-            "tags":["webdev","beginner","frontend"]
+            "title": "How to make a mini portable class D stereo amplifier",
+            "description": "Build a compact Class D stereo amplifier for portable audio applications. High-efficiency amplifier design tutorial.",
+            "type":"hardprojects",
+            "demoVideo":"https://www.youtube.com/watch?v=51M3Zh9YJFs",
+            "icon": "fa-solid fa-volume-up",
+            "tags":["audio","amplifier","class-d","portable"]
         },
         {
-            "title": "REACT & MODERN JAVASCRIPT",
-            "description": "Advanced workshop on React hooks, state management, and building scalable applications. Covers Redux, Context API, and performance optimization.",
-            "type":"workshops",
-            "url":"https://workshop-react.example.com",
-            "icon": "fa-brands fa-react",
-            "tags":["reactjs","javascript","advanced"]
-        },
-        {
-            "title": "MACHINE LEARNING BASICS",
-            "description": "Introduction to ML algorithms, neural networks, and practical applications. Includes Python, TensorFlow, and real-world datasets.",
-            "type":"workshops",
-            "url":"https://workshop-ml.example.com",
-            "icon": "fa-solid fa-brain",
-            "tags":["ai","python","machinelearning"]
-        },
-        {
-            "title": "BUILDING MICROSERVICES",
-            "description": "Workshop on microservices architecture, Docker, Kubernetes, and cloud deployment. Covers API design and service communication.",
-            "type":"workshops",
-            "url":"https://workshop-microservices.example.com",
-            "icon": "fa-solid fa-server",
-            "tags":["backend","docker","kubernetes"]
-        },
-        {
-            "title": "THE FUTURE OF WEB3",
-            "description": "Tech talk exploring blockchain technology, decentralized applications, and the evolution of the internet. Discussed at TechConf 2024.",
-            "type":"talks",
-            "url":"https://techconf2024.example.com/talks/web3",
-            "icon": "fa-solid fa-link",
-            "tags":["blockchain","web3","conference"]
-        },
-        {
-            "title": "BUILDING SCALABLE SYSTEMS",
-            "description": "Presentation on system design, load balancing, and handling millions of users. Shared insights from production experience.",
-            "type":"talks",
-            "url":"https://devcon.example.com/talks/scalability",
-            "icon": "fa-solid fa-network-wired",
-            "tags":["architecture","scalability","backend"]
-        },
-        {
-            "title": "AI IN MODERN APPLICATIONS",
-            "description": "Talk on integrating AI/ML into web applications, practical use cases, and ethical considerations. Presented at AI Summit 2024.",
-            "type":"talks",
-            "url":"https://aisummit.example.com/talks/ai-apps",
-            "icon": "fa-solid fa-microchip",
-            "tags":["ai","machinelearning","ethics"]
-        },
-        {
-            "title": "AWS CERTIFIED SOLUTIONS ARCHITECT",
-            "description": "Professional certification for designing distributed systems on AWS",
-            "type":"certificates",
-            "url":"https://aws.amazon.com/certification/",
-            "icon": "fa-brands fa-aws",
-            "tags":["cloud","aws","architecture"]
-        },
-        {
-            "title": "GOOGLE CLOUD PROFESSIONAL",
-            "description": "Advanced certification in Google Cloud Platform services and architecture",
-            "type":"certificates",
-            "url":"https://cloud.google.com/certification",
-            "icon": "fa-brands fa-google",
-            "tags":["cloud","gcp","professional"]
-        },
-        {
-            "title": "KUBERNETES ADMINISTRATOR",
-            "description": "Certified Kubernetes Administrator (CKA) for container orchestration",
-            "type":"certificates",
-            "url":"https://www.cncf.io/certification/cka/",
-            "icon": "fa-solid fa-dharmachakra",
-            "tags":["kubernetes","devops","containers"]
-        },
-        {
-            "title": "TENSORFLOW DEVELOPER",
-            "description": "TensorFlow Developer Certificate for machine learning expertise",
-            "type":"certificates",
-            "url":"https://www.tensorflow.org/certificate",
-            "icon": "fa-solid fa-brain",
-            "tags":["ai","tensorflow","machinelearning"]
+            "title": "Overcharging protection circuit",
+            "description": "Battery overcharge protection circuit design. Essential safety circuit for lithium-ion battery charging systems.",
+            "type":"hardprojects",
+            "demoVideo":"https://www.youtube.com/watch?v=1wu_T6GkZlQ",
+            "icon": "fa-solid fa-battery-full",
+            "tags":["electronics","battery","protection","safety"]
         }
     ],
     "timeline":[
         {
-            "event":"",
+            "event":"Born - The journey begins",
+            "icon":"fa-solid fa-baby",
+            "year":"2006"
+        },
+        {
+            "event":"First tinkering with electronics - Discovered the magic of circuits and components",
+            "icon":"fa-solid fa-lightbulb",
+            "year":"2014"
+        },
+        {
+            "event":"Deep dive into electronics & embedded systems - Fascinated by military and defense applications",
+            "icon":"fa-solid fa-microchip",
+            "year":"2016"
+        },
+        {
+            "event":"Explored history - Broadened perspective beyond technology",
+            "icon":"fa-solid fa-book",
+            "year":"2017"
+        },
+        {
+            "event":"Returned to electronics - Started building fun and creative hardware projects",
+            "icon":"fa-solid fa-screwdriver-wrench",
+            "year":"2018"
+        },
+        {
+            "event":"Joined GitHub - Started coding journey and open source contributions",
+            "icon":"fa-brands fa-github",
+            "year":"2019"
+        },
+        {
+            "event":"Mastered embedded systems - Arduino, ESP32, and IoT projects",
+            "icon":"fa-solid fa-cpu",
+            "year":"2020"
+        },
+        {
+            "event":"Jumped into software engineering - Full-stack web development journey begins",
             "icon":"fa-solid fa-code",
-            "year":""
+            "year":"2021"
+        },
+        {
+            "event":"Published CLI tools & reached 100+ repositories - Active open source developer",
+            "icon":"fa-solid fa-terminal",
+            "year":"2022"
+        },
+        {
+            "event":"Attended JS World Conference USA - Expanding horizons in web technologies",
+            "icon":"fa-solid fa-plane",
+            "year":"2023"
+        },
+        {
+            "event":"300+ repositories milestone - Balancing hardware and software expertise",
+            "icon":"fa-solid fa-rocket",
+            "year":"2024"
+        },
+        {
+            "event":"Learning Data Science - Exploring ML, AI, and data analytics for the future",
+            "icon":"fa-solid fa-chart-line",
+            "year":"2025"
+        }
+    ],
+    "certificates":[
+        {
+            "title":"Tools for Data Science",
+            "issuer":"IBM via Coursera",
+            "date":"Sep 4, 2025",
+            "type":"certificates",
+            "certificateId":"579E7GMKVKPL",
+            "verifyUrl":"https://coursera.org/verify/579E7GMKVKPL",
+            "pdfUrl":"./assets/certificates/Coursera 579E7GMKVKPL.pdf",
+            "icon":"fa-solid fa-tools",
+            "tags":["data-science","ibm","tools","coursera"]
+        },
+        {
+            "title":"What is Data Science?",
+            "issuer":"IBM via Coursera",
+            "date":"Sep 2, 2025",
+            "type":"certificates",
+            "certificateId":"7CTPQGEHHB4F",
+            "verifyUrl":"https://coursera.org/verify/7CTPQGEHHB4F",
+            "pdfUrl":"./assets/certificates/Coursera 7CTPQGEHHB4F.pdf",
+            "icon":"fa-solid fa-graduation-cap",
+            "tags":["data-science","ibm","fundamentals","coursera"]
+        },
+        {
+            "title":"Python for Data Science, AI & Development",
+            "issuer":"IBM via Coursera",
+            "date":"Sep 7, 2025",
+            "type":"certificates",
+            "certificateId":"OVSQPLCOFACI",
+            "verifyUrl":"https://coursera.org/verify/OVSQPLCOFACI",
+            "pdfUrl":"./assets/certificates/Coursera OVSQPLCOFACI.pdf",
+            "icon":"fa-brands fa-python",
+            "tags":["python","data-science","ai","ibm","coursera"]
         }
     ]
 }   

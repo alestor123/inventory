@@ -4,12 +4,24 @@ const maintitle = document.getElementById('main-title')
 const maindesc = document.getElementById('main-description')
 
 async function run () {
-  const { items, contents, platformFetch, username } = (await (await fetch(fetchURL)).json())
+  const { items, contents, certificates, timeline, platformFetch, username } = (await (await fetch(fetchURL)).json())
   // code 404
   const isFound = keytype => (keytype.type === type)
   if (!items.some(isFound) && !platformFetch.includes(type)) window.location.replace('/404.html')
   const { title, description } = items.find(isFound)
-  const fileteredList = type == 'ossprojects' ? (await fetchGithubProjects(username)) : contents.filter(contentType => contentType.type === type)
+  
+  // Handle different content types
+  let fileteredList;
+  if (type == 'ossprojects') {
+    fileteredList = await fetchGithubProjects(username)
+  } else if (type == 'certificates') {
+    fileteredList = certificates || []
+  } else if (type == 'timeline') {
+    fileteredList = timeline || []
+  } else {
+    fileteredList = contents.filter(contentType => contentType.type === type)
+  }
+  
   if (fileteredList.length === 0 && !platformFetch.includes(type)) window.location.replace('/empty.html')
   maintitle.innerHTML = title
   document.title = title

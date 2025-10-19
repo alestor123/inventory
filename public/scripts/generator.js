@@ -14,7 +14,9 @@ const main = async (username) => {
 };
 
 function setProfile({bio,blog,avatar_url,followers,public_repos,name,company}) {
-document.querySelector('.info').innerHTML = `
+const infoElement = document.querySelector('.info');
+if (infoElement) {
+    infoElement.innerHTML = `
 <figure>
             <img alt="User Profile" src="${avatar_url}" class="avatar" />
         </figure>
@@ -30,6 +32,7 @@ document.querySelector('.info').innerHTML = `
 
         </div>
         `;
+}
 }
 
 function generateTags (fileteredList) {
@@ -204,6 +207,39 @@ function generator (dir, type) {
                                             </a>
                                             <!-- Trigger button -->
 <button class="popup-trigger" onclick=popup(${dir.id}) >View Project</button>
+`;break
+      case 'certificates':
+        return `
+                    <a href="${dir.pdfUrl}" target='_blank'>
+                        <div>
+                            <h3>
+                            <span class='${dir.icon}' ></span>
+                                ${dir.title}
+                            </h3>
+                            <p>${dir.issuer} - ${dir.date}</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">ID: ${dir.certificateId}</p>
+                            ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
+                        </div>
+                    </a>
+                    <a href="${dir.verifyUrl}" class="popup-trigger" target='_blank' style="display: inline-block; text-decoration: none;">
+                        <i class="fa-solid fa-certificate"></i> Verify Certificate
+                    </a>
+`;break
+      case 'timeline':
+        return `
+                    <div style="pointer-events: none;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="font-size: 2em; font-weight: bold; color: var(--neon-cyan); min-width: 80px;">
+                                ${dir.year}
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="margin: 0; display: flex; align-items: center; gap: 10px;">
+                                    <span class='${dir.icon}'></span>
+                                    <span>${dir.event}</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
 `;break
     }
   }
