@@ -30,7 +30,7 @@
             "title": "RESUME",
             "description": "Skills, experience & achievements",
             "type":"link",
-            "url":"https://drive.google.com/file/d/1jx9-QpA0uwB5jYL7H3trExFC-UwUcBVc/view?usp=sharing",
+            "url":"https://drive.google.com/file/d/1bWk3dohlUpGpmRkyB_9JhgJUCY8U9Fky/view?usp=sharing",
             "icon": "fa-solid fa-file"
         },
         {
@@ -144,7 +144,7 @@
             "title": "INSTAGRAM",
             "description": "Personal moments & tech journey",
             "type":"socials",
-            "url": "https://www.instagram.com/alestor123",
+            "url": "https://www.instagram.com/alestor_dev",
             "icon": "fa-brands fa-instagram",
             "tags":["social","personal"]
         },
@@ -207,19 +207,7 @@
             "title": "IS-CONVENTIONAL",
             "description": "Validate commit messages against conventional commit standards. Ensures your Git commits follow best practices and conventions.",
             "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/IS-CONVENTIONAL",
-            "icon": "fa-solid fa-check-circle",
-            "tags":["git","nodejs","commit","validation"],
-            "stars":2
-        },
-        {
-            "title": "CREATE-PROFILE",
-            "description": "Interactive CLI generator for creating stunning GitHub profile READMEs. Build your profile with prompts and templates.",
-            "type":"softprojects",
-            "sourceCode":"https://github.com/alestor123/CREATE-PROFILE",
-            "icon": "fa-brands fa-github",
-            "tags":["cli","nodejs","github","generator"],
-            "stars":1
+            "sourceCode":"https://github.com/alestor123/IS-CONVENTIONAL"
         },
         {
             "title": "How to setup login password for raspberry pi",
@@ -276,6 +264,75 @@
             "demoVideo":"https://www.youtube.com/watch?v=1wu_T6GkZlQ",
             "icon": "fa-solid fa-battery-full",
             "tags":["electronics","battery","protection","safety"]
+        },
+        {
+            "title": "Bluetooth Switch",
+            "description": "Wireless switch controlled via Bluetooth from a smartphone app. Built with an ESP32 and relay module for home automation applications.",
+            "type": "hardprojects",
+            "demoImage": [
+                "/public/assets/electronics/bluetooth_switch.jpg",
+                "/public/assets/electronics/bswitch1.jpg",
+                "/public/assets/electronics/bswitch2.jpg",
+                "/public/assets/electronics/bswitch3.jpg"
+            ],
+            "sourceCode": "https://github.com/alestor123/bluetooth-switch",
+            "icon": "fa-solid fa-bluetooth",
+            "tags": ["esp32", "bluetooth", "iot", "home-automation"]
+        },
+        {
+            "title": "DIY Voting Machine",
+            "description": "An electronic voting machine prototype built with Arduino. Features secure voting, candidate selection, and vote counting capabilities.",
+            "type": "hardprojects",
+            "demoImage": "/public/assets/electronics/diy_voting_machine.jpg",
+            "article": "https://alestor123.github.io/posts/diy-voting-machine/",
+            "icon": "fa-solid fa-vote-yea",
+            "tags": ["arduino", "embedded", "prototype", "electronics"]
+        },
+        {
+            "title": "NAS Server",
+            "description": "A Network Attached Storage server built with a Raspberry Pi and external hard drives. Provides centralized file storage and media streaming capabilities.",
+            "type": "hardprojects",
+            "demoImage": "/public/assets/electronics/nas_server.jpg",
+            "article": "https://alestor123.github.io/posts/diy-nas-server/",
+            "icon": "fa-solid fa-server",
+            "tags": ["raspberrypi", "networking", "storage", "diy"]
+        },
+        {
+            "title": "Portable Power Bank",
+            "description": "Custom power bank with multiple USB outputs and battery level indicators. Built with 18650 lithium-ion cells and a power management module.",
+            "type": "hardprojects",
+            "demoImage": "/public/assets/electronics/powerbank.jpg",
+            "icon": "fa-solid fa-battery-three-quarters",
+            "tags": ["power", "battery", "diy", "portable"]
+        },
+        {
+            "title": "Smart Band Prototype",
+            "description": "Wearable fitness tracker prototype with step counting, heart rate monitoring, and smartphone notifications. Built with ESP32 and various sensors.",
+            "type": "hardprojects",
+            "demoImage": [
+                "/public/assets/electronics/smartband.jpg",
+                "/public/assets/electronics/smartband.png"
+            ],
+            "sourceCode": "https://github.com/alestor123/smartband-prototype",
+            "icon": "fa-solid fa-heart-pulse",
+            "tags": ["wearables", "esp32", "fitness", "iot"]
+        },
+        {
+            "title": "Wireless Access Point",
+            "description": "Custom wireless access point with external antennas for extended range. Based on OpenWRT firmware with custom configurations.",
+            "type": "hardprojects",
+            "demoImage": "/public/assets/electronics/wireless_access_point.jpg",
+            "article": "https://alestor123.github.io/posts/diy-wireless-ap/",
+            "icon": "fa-solid fa-wifi",
+            "tags": ["networking", "wifi", "openwrt", "diy"]
+        },
+        {
+            "title": "DIY LED Lamp",
+            "description": "Custom LED desk lamp with adjustable brightness and color temperature. Features touch controls and a minimalist design.",
+            "type": "hardprojects",
+            "demoImage": "/public/assets/electronics/diy_lamp.jpg",
+            "icon": "fa-solid fa-lightbulb",
+            "tags": ["led", "lighting", "diy", "arduino"]
         }
     ],
     "timeline":[

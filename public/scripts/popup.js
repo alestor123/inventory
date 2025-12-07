@@ -16,51 +16,56 @@ function popup (index) {
     <div class="project-details">
       <h2 id="project-title" class="text-center">${data.title}</h2>
       
-      <!-- Video container -->
-      <div class="video-container">
-${data.demoVideo ? `<iframe title="video-player" src="${data.demoVideo.replace('watch?v=', 'embed/')}"  frameborder="0"  id="project-video"  allowfullscreen></iframe>` : ''} 
-${data.demoImage && data.demoImage.constructor === Array && data.demoImage.length >= 1
-? `
-  
-${data.demoImage.length === 1
-? `<img src="${data.demoImage}" alt="DEMO IMAGE" width="500" height="300">`
-: `
-
- <div class="slideshow-container">
-${
- data.demoImage.map((e, num) => {
-return `<div class="mySlides fade">
-                <div class="numbertext">${num + 1}/${data.demoImage.length}</div>
-                <img src="${e}" width="500" height="300">
-              </div>`
-  }).join('')
-
-}            
-              <button class="prev" onclick="plusSlides(-1)">❮</button>
-              <button class="next" onclick="plusSlides(1)">❯</button>
-              
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-
-
-${
- data.demoImage.map((e, num) => {
-return `<span class="dot" onclick="currentSlide(${num + 1})"></span>`
-  }).join('')
-
-}            
-</div>
-              </div>
-
-
-`} 
-  
-  
-  
-  `
-: ''}
+      <!-- Media container with 16:9 aspect ratio -->
+      <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+        ${data.demoVideo 
+          ? `<iframe 
+                title="video-player" 
+                src="${data.demoVideo.replace('watch?v=', 'embed/')}" 
+                frameborder="0" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                allowfullscreen>
+             </iframe>` 
+          : data.demoImage 
+            ? Array.isArray(data.demoImage) && data.demoImage.length > 0
+              ? `
+                <div class="slideshow-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                  ${data.demoImage.map((img, index) => `
+                    <div class="mySlides fade" style="position: relative; width: 100%; height: 100%;">
+                      <div class="numbertext" style="position: absolute; top: 10px; left: 10px; color: white; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 3px; font-size: 12px;">
+                        ${index + 1}/${data.demoImage.length}
+                      </div>
+                      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: #000;">
+                        <img 
+                          src="${img}" 
+                          alt="${data.title} - Image ${index + 1}" 
+                          style="max-width: 100%; max-height: 100%; object-fit: contain;"
+                          loading="lazy"
+                        >
+                      </div>
+                    </div>
+                  `).join('')}
+                  <button class="prev" onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; padding: 15px; border-radius: 50%;">❮</button>
+                  <button class="next" onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; padding: 15px; border-radius: 50%;">❯</button>
+                </div>
+                <div style="text-align: center; position: absolute; bottom: 15px; width: 100%;">
+                  ${data.demoImage.map((_, index) => 
+                    `<span class="dot" onclick="currentSlide(${index + 1})" style="cursor: pointer; height: 12px; width: 12px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease;"></span>`
+                  ).join('')}
+                </div>
+              `
+              : `
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: #000;">
+                  <img 
+                    src="${data.demoImage}" 
+                    alt="${data.title}" 
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;"
+                    loading="lazy"
+                  >
+                </div>
+              `
+            : ''
+        }
 
 ${!data.demoVideo && !data.demoImage ? '<h2>Kitty says: Media not found</h2> <img src =\'https://media.tenor.com/J7GBdx1T2q4AAAAi/pusheen-detective.gif\' id=\'media-not-found\' >' : ''}
 
