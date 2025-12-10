@@ -5,10 +5,14 @@ const maindesc = document.getElementById('main-description')
 
 async function run () {
   const { items, contents, certificates, timeline, platformFetch, username } = (await (await fetch(fetchURL)).json())
+  console.log('Total contents loaded:', contents.length);
+  console.log('Contents:', contents);
+  
   // code 404
   const isFound = keytype => (keytype.type === type)
   if (!items.some(isFound) && !platformFetch.includes(type)) window.location.replace('/404.html')
   const { title, description } = items.find(isFound)
+  console.log('Current type:', type);
   
   // Handle different content types
   let fileteredList;
@@ -19,7 +23,11 @@ async function run () {
   } else if (type == 'timeline') {
     fileteredList = timeline || []
   } else {
+    // For hardprojects, include all items of the specified type
+    console.log('Filtering contents for type:', type);
+    console.log('All content types:', [...new Set(contents.map(c => c.type))]);
     fileteredList = contents.filter(contentType => contentType.type === type)
+    console.log(`Found ${fileteredList.length} items for type ${type}:`, fileteredList) // Debug log
   }
   
   if (fileteredList.length === 0 && !platformFetch.includes(type)) window.location.replace('/empty.html')

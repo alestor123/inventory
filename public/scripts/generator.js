@@ -56,7 +56,13 @@ async function displayDirs (typeDir, filteredContent) {
       const liItem = document.createElement('li')
       liItem.classList.add('itm')
       dir.id = index
-      dir.tags.forEach((tag) => liItem.classList.add(tag))
+      if (dir.tags && Array.isArray(dir.tags)) {
+        dir.tags.forEach((tag) => {
+          // Replace spaces with hyphens and ensure the tag is a string
+          const safeTag = String(tag).replace(/\s+/g, '-');
+          liItem.classList.add(safeTag);
+        });
+      }
       liItem.innerHTML = generator(dir, 'content')
       list.append(liItem)
     }) // }
@@ -101,8 +107,9 @@ function searchDisplay (search, tag) {
     const searchTerms = searchNormalize.split(' ').filter(term => term.length > 0)
     const matchesSearch = searchTerms.length === 0 || searchTerms.every(term => normalText.includes(term))
     
-    // Tag filtering
-    const matchesTag = tag === 'all' || className.includes(tag.toLowerCase())
+    // Tag filtering - normalize tag to match the class name format (spaces replaced with hyphens)
+    const normalizedTag = tag.toLowerCase().replace(/\s+/g, '-')
+    const matchesTag = tag === 'all' || className.includes(normalizedTag)
     
     // Show/hide items with smooth transition
     if (matchesSearch && matchesTag) {
@@ -195,19 +202,18 @@ function generator (dir, type) {
       case 'softprojects':
       case 'hardprojects':
         return `
-                                            
-                                                <div>
-                                                    <h3>
-                                                    <span class='${dir.icon}' ></span>
-                                                        ${dir.title}
-                                                    </h3>
-                                                    <p>${shortenDescription(dir.description)}</p>
-                                                       ${dir.tags ? `<p>Tags: ${dir.tags.map(tag => `#${tag}`).join(', ')}</p>` : ''} 
-                                                </div>
-                                            </a>
-                                            <!-- Trigger button -->
-<button class="popup-trigger" onclick=popup(${dir.id}) >View Project</button>
-`;break
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>
+                        <span class='${dir.icon}'></span>
+                        ${dir.title}
+                    </h3>
+                    <p>${shortenDescription(dir.description)}</p>
+                    ${dir.tags ? `<p class="project-tags">${dir.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ')}</p>` : ''}
+                    <button class="popup-trigger" onclick="popup(${dir.id})">View Project</button>
+                </div>
+            </div>
+        `;break
       case 'certificates':
         return `
                     <a href="${dir.pdfUrl}" target='_blank'>
