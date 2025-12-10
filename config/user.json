@@ -281,6 +281,54 @@
             "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/diy_lamp.jpg",
             "icon": "fa-solid fa-lightbulb",
             "tags": ["led", "lighting", "diy", "arduino"]
+        },
+        {
+            "title": "Arduino Smart Watch",
+            "description": "A custom-built smartwatch powered by Arduino with basic timekeeping and notification features.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/arduino_smart_watch.jpg",
+            "icon": "fa-solid fa-clock",
+            "tags": ["arduino", "wearables", "iot", "diy"]
+        },
+        {
+            "title": "Bluetooth Switch",
+            "description": "Wireless switch controlled via Bluetooth for home automation projects. Can be integrated with smartphones and smart home systems.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/bluetooth_switch.jpg",
+            "icon": "fa-solid fa-toggle-on",
+            "tags": ["bluetooth", "iot", "home automation", "wireless"]
+        },
+        {
+            "title": "DIY Voting Machine",
+            "description": "A secure and reliable electronic voting machine prototype with a simple interface and vote counting system.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/diy_voting_machine.jpg",
+            "icon": "fa-solid fa-vote-yea",
+            "tags": ["arduino", "embedded", "voting", "diy"]
+        },
+        {
+            "title": "NAS Server",
+            "description": "Custom Network Attached Storage server for home use, built with Raspberry Pi and multiple hard drives.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/nas_server.jpg",
+            "icon": "fa-solid fa-server",
+            "tags": ["nas", "raspberry pi", "networking", "storage"]
+        },
+        {
+            "title": "Portable Power Bank",
+            "description": "High-capacity DIY power bank with multiple USB outputs and battery level indicators.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/powerbank.jpg",
+            "icon": "fa-solid fa-battery-three-quarters",
+            "tags": ["power", "battery", "portable", "diy"]
+        },
+        {
+            "title": "Smart Band",
+            "description": "Custom smart band with fitness tracking and notification features, built with ESP32.",
+            "type": "hardprojects",
+            "demoImage": "https://raw.githubusercontent.com/alestor123/inventory/refs/heads/master/public/assets/electronics/smartband.jpg",
+            "icon": "fa-solid fa-watch-fitness",
+            "tags": ["wearables", "esp32", "fitness", "iot"]
         }
     ],
     "timeline":[
